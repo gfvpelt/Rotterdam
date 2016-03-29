@@ -1,0 +1,32 @@
+chgrp -R <file-or-dir>
+chown -R
+
+lxc stop $(lxc list | grep RUNNING | awk '{print $2}' | sort -u|grep -v NAME)
+ ps -fauxww
+
+issues 
+grep de syslog op "panic warrning enzo"
+last reboot 
+last -x 
+
+create a archive for /home directory with file name as archive-name.tar.
+# tar -cvf archive-name.tar /home
+
+To extract tar archive file use the option as follows.
+# tar -xvf archive-name.tar
+
+ssh-keygen -t rsa -b 4096
+systemctl status systemd-networkd
+
+systemctl  | grep maas
+systemctl  status maas-regiond-worker@1.service
+systemctl  status maas-regiond-worker@2.service
+journalctl --unit maas-clusterd.service
+journalctl -xe
+
+journalctl --priority 2..3
+sudo adduser gfvpelt sudo
+
+systemd-cgls systemd-cgtop
+sudo apt list --upgradable
+netstat -tulnp

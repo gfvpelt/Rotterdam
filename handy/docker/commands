@@ -1,0 +1,22 @@
+docker images 
+docker ps
+docker ps -a
+docker run -i -t ub2/openhab2 /bin/bash
+docker run -itd -p 8081:8080 --device=/dev/ttyACM0 -v /tmp/openhab/configurations/:/opt/openhab/configurations -v /root/logs:/opt/openhab/logs ub/openhab
+
+#automation
+cat Dockerfile
+docker build -t system/applicatie . # vergeet de punt niet
+
+#van container to image do "commit"
+docker commit d2696d0c9dd2 ub/openhab
+# ergens vandaan
+docker pull 
+
+
+
+
+Remove images and de oude docers 
+
+	docker rmi $(docker images -q) 
+	docker rm $(docker ps -a -q)

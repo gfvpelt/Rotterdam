@@ -1,0 +1,22 @@
+ systemctl status NetworkManager.service
+ cd /etc/systemd/network
+ touch 10-1.WAN.network
+ touch 10-2.LAN.network
+ touch 20-1.BRIDGE0.netdev
+ touch 30-1.BRIDGE0.network
+ vi 10-1.WAN.network
+ vi 10-2.LAN.network
+ vi 20-1.BRIDGE0.netdev
+ vi 30-1.BRIDGE0.network
+ shutdown -r +15
+ apt-get remove ifup ufw
+ apt-get remove ifup
+ apt-cache search ifup
+ apt-get remove ifupdown
+ apt-get remove ufw
+ cd /etc/network/
+ vi interfaces
+ systemctl enable systemd-networkd
+ systemctl enable systemd-resolved.service
+ systemctl start systemd-networkd
+

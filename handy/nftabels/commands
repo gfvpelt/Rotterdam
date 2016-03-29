@@ -1,0 +1,5 @@
+ufw uit voordat ik nftables aanzet
+
+dnsmask lxc 
+
+lxd default profile 

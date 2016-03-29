@@ -1,0 +1,42 @@
+lxc --help # dit zijn lxd commands
+lxc list
+
+lxc start c2 centos u1
+lxc exec u1 /bin/bash
+lxc launch images:centos/7/amd64 centos
+lxc info u1
+
+lxd default profile
+
+
+==========
+- ssh naar lxd containers
+stgraber@dakara:~$ cat .ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUxZlF5ppeH4Al6FLRBP0yXuNp8FJETdbQ68C7NRp1KkFAkOV92pf0pX+Qne0INKKGXTYqvkmvnF3Y1Hymg66nBnaPjS5xoq6GZH3nACQ9BvkPo+sMdzFjWgGC0FvPau+HdOwf4+obOTcRFW6vuqFoEnz9kNN2wTe0Hc1hPGWihq0dxzgkwaBH+EVVYwKURVsDz5VqN7weL6FI7RA2l3OZyH0WHebzDay4bweBANQ1BHr1iVsJkz8kCA77M29Mb8t9nBulwVbfjAYssqLEjdTQCLn2xgfXMVtI/w0j9YDKe4ondXeFHLwfEuPI83lO7YzgKarJeibKkLGVjeLvYIq/ stgraber@dakara
+
+
+stgraber@dakara:~$ (
+> cat << EOF
+> #cloud-config
+> ssh_authorized_keys:
+>  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUxZlF5ppeH4Al6FLRBP0yXuNp8FJETdbQ68C7NRp1KkFAkOV92pf0pX+Qne0INKKGXTYqvkmvnF3Y1Hymg66nBnaPjS5xoq6GZH3nACQ9BvkPo+sMdzFjWgGC0FvPau+HdOwf4+obOTcRFW6vuqFoEnz9kNN2wTe0Hc1hPGWihq0dxzgkwaBH+EVVYwKURVsDz5VqN7weL6FI7RA2l3OZyH0WHebzDay4bweBANQ1BHr1iVsJkz8kCA77M29Mb8t9nBulwVbfjAYssqLEjdTQCLn2xgfXMVtI/w0j9YDKe4ondXeFHLwfEuPI83lO7YzgKarJeibKkLGVjeLvYIq/ stgraber@dakara
+> EOF
+> ) | lxc config set my-container user.user-data -
+
+lxc image list images:
+
+
+lxc remote list	list remotes
+lxc info	displays status of localhost
+lxc info <container>	displays status of container
+lxc config show <container>	displays config of container
+lxc image info <alias or fingerprint>	displays status of image
+lxc exec <container> <executable>	run prgram on container
+lxc exec <container> /bin/bash	spawn shell on container
+lxc file pull <container></path/to/file> .	copy file from container
+lxc file push </path/to/file> <container>/	copy file to container
+lxc stop <container>	stop container
+lxc image alias delete <alias>	delete image alias
+lxc image alias create <alias> <fingerprint>	create image alias
+brctl show
+lxc image list images:
