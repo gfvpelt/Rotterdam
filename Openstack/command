@@ -1,0 +1,26 @@
+- NTP
+
+yum install ntp
+systemctl enable ntpd
+systemctl start ntpd
+
+rm /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
+
+ntpq -c peers
+nu is het -> chronyc sources
+
+- sudoer
+sudo cat /etc/sudoers
+add extra line by root yy p + username
+
+
+- Installes
+MariaDB         root/bla123bla
+Messaging RabbitMQ      guest/bla123bla
+
+:wq
+
+-ERRORS
+glance werkt niet.. su gaf ook melding dat een bug is
+

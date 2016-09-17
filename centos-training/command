@@ -1,1 +1,3 @@
-ll
+         fc -ln -1  "get last command from history, mooi voor naar deze file schrijven
+         df -hT         overzicht van mouts en waar ze zitten
+         findmnt        ook zoiets.
