@@ -1,0 +1,19 @@
+maak nieuwe werk dir"
+ git init
+ git clone https://github.com/gfvpelt/Rotterdam
+git status
+
+doe whatever... enzo
+
+git add *
+git commit -am "bla"
+git push origin master "zorg wel dat je in Rotterdam directory staat"
+
+=========
+ git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+password staat in last pass
+nononses guide:
+http://rogerdudler.github.io/git-guide/
+
+
