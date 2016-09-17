@@ -3,6 +3,8 @@ ssh-keygen -t rsa
 -b 4048 ofzo als 2k key te klein is
 
 
-copy you Pub into the autorisation file van de overkant en dat zou genoeg moeten zijn
+copy you id_rsa.pub into the authorized_keys file van de overkant 
+ en dat zou genoeg moeten zijn. tiss wel wat gekut met format.
+
 ubuntu heeft wat ssh-copy-key stuffy ofzo... maar is miss juist onduidelijk
 
