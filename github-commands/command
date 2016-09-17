@@ -16,4 +16,11 @@ password staat in last pass
 nononses guide:
 http://rogerdudler.github.io/git-guide/
 
+effe goed kijken of wel echt alles op de git hub staat
+of via de brouwser of via command below
+ 
+gfvpelt@Rdam:~/gh/Rotterdam/github-commands$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
 
