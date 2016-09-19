@@ -1,3 +1,6 @@
+grep ika * | awk '{print$1" "$2}' | cut -d'-' -f1
+    cut is lastig dus -d vanaf en dat -f welk gedeelte je over wilt houden
+
 chgrp -R <file-or-dir>
 chown -R
 
