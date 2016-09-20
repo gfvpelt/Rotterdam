@@ -3,3 +3,6 @@ yum install epel-release
 
 http://www.tecmint.com/install-create-run-lxc-linux-containers-on-centos/
 
+	 lxc-checkconfig
+	 ls -alh /usr/share/lxc/templates
+	 sudo lxc-create -n mydcb -t debian
