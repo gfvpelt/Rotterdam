@@ -1,0 +1,5 @@
+yum install epel-release
+	yum install debootstrap perl libvirt
+
+http://www.tecmint.com/install-create-run-lxc-linux-containers-on-centos/
+
