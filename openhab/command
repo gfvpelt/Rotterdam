@@ -1,1 +1,8 @@
 http://192.168.1.20:8080/openhab.app?sitemap=huis
+http://192.168.1.20:8080/habmin/
+
+
+
+sitemaps
+rules 
+items (elk lampje)

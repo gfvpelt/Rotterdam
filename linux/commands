@@ -33,3 +33,9 @@ sudo adduser gfvpelt sudo
 systemd-cgls systemd-cgtop
 sudo apt list --upgradable
 netstat -tulnp
+
+screen -S maak
+screen -list wat is er
+screen -r <naam> is terug gaan
+
+screen eruit geen extit... maar cntr-a d
