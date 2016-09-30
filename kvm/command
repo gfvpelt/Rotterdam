@@ -1,2 +1,3 @@
 virsh # define vWLC.xml
+virsh # start vWLC
 
