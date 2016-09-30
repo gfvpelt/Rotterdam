@@ -39,3 +39,7 @@ screen -list wat is er
 screen -r <naam> is terug gaan
 
 screen eruit geen extit... maar cntr-a d
+
+
+rechten van directory's enzo
+	/usr/lib/tmpfiles.d
