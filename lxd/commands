@@ -53,3 +53,23 @@ lxc config set haglab-natproxy volatile.eth0.hwaddr 00:16:3e:34:a1:a1
 lxc config show haglab-natproxy
 profile copy 504 haglab-natproxy
 lxc profile edit 304
+
+===
+lxc profile show haglab-natproxy
+name: haglab-natproxy
+config: {}
+description: ""
+devices:
+  eth0:
+    name: eth0
+    nictype: bridged
+    parent: br666
+    type: nic
+  eth1:
+    name: eth1
+    nictype: bridged
+    parent: br999
+    type: nic
+
+
+
