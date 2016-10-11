@@ -21,3 +21,45 @@
  systemctl start systemd-networkd
  tcpdump -vvv -i enp3s0 -c1500 -wHue4.cap host 192.168.1.42
 iptables -A INPUT -i enp3s0 -p tcp --dport 22 -j accept
+
+
+>> systemd-network
+
+cat physical-eno2.network
+
+[Match]
+Name=eno2
+
+[Network]
+#VLAN=vlan205
+VLAN=vlan304
+VLAN=vlan305
+VLAN=vlan666
+VLAN=vlan999
+# testlab trunk #
+
+cat create-br666.netdev
+[NetDev]
+Name=br666
+Kind=bridge
+
+cat create-vlan666.netdev
+[NetDev]
+Name=vlan666
+Kind=vlan
+
+[VLAN]
+Id=666
+
+
+cat map-vlan666-br666.network
+[Match]
+Name=vlan666
+
+[Network]
+Bridge=br666
+
+cat init-bridge-br666.network
+[Match]
+Name=br666
+
