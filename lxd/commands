@@ -40,3 +40,16 @@ lxc image alias delete <alias>	delete image alias
 lxc image alias create <alias> <fingerprint>	create image alias
 brctl show
 lxc image list images:
+
+==
+lxc profile show
+lxc profile device show
+lxc profile device list
+lxc launch ubuntu:16.04 testlxdclient
+lxc start testlxdclient
+lxc info --show-log testlxdclient
+lxc exec testlxdclient -- /bin/bash
+lxc config set haglab-natproxy volatile.eth0.hwaddr 00:16:3e:34:a1:a1
+lxc config show haglab-natproxy
+profile copy 504 haglab-natproxy
+lxc profile edit 304
