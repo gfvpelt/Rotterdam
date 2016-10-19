@@ -1,3 +1,10 @@
 virsh # define vWLC.xml
 virsh # start vWLC
 
+
+VNC connect mss dit nodig
+ 947  apt search virt
+  948  apt search virt-install
+  949  apt install virtinst/xenial-updates
+  950  apt install virtinst
+
