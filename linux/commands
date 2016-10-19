@@ -43,3 +43,6 @@ screen eruit geen extit... maar cntr-a d
 
 rechten van directory's enzo
 	/usr/lib/tmpfiles.d
+
+alias ll='ls -al'
+find -name zoekopdract 	2>/dev/null
