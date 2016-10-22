@@ -14,9 +14,19 @@ last -x
 
 create a archive for /home directory with file name as archive-name.tar.
 # tar -cvf archive-name.tar /home
-
 To extract tar archive file use the option as follows.
 # tar -xvf archive-name.tar
+
+rsync -a -essh /source/ user@dest-server:/dest/
+
+rsync -a -essh user@source-server:/source/ /dest/
+My favorites options are -Pazvessh --delete :
+	-a : archive mode (include a lot of default common options, including preserving symlinks)
+	-z : compress
+	-v : verbose : show files
+	-P : show progess as files done/remaining files
+	-e ssh : do rsync in ssh protocol
+	--delete : delete files in the destination that are not anymore in the source
 
 ssh-keygen -t rsa -b 4096
 systemctl status systemd-networkd
