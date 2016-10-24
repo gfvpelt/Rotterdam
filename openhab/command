@@ -1,6 +1,7 @@
 http://192.168.1.20:8080/openhab.app?sitemap=huis
 http://192.168.1.20:8080/habmin/
 
+ cp -p wall_switch1.rules "wall_switch1.rules.backup.$(date +%F_%R)"
 
 
 sitemaps
