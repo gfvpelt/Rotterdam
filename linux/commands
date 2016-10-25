@@ -27,6 +27,7 @@ My favorites options are -Pazvessh --delete :
 	-P : show progess as files done/remaining files
 	-e ssh : do rsync in ssh protocol
 	--delete : delete files in the destination that are not anymore in the source
+	--exclude 'directory'
 
 ssh-keygen -t rsa -b 4096
 systemctl status systemd-networkd
