@@ -1,0 +1,1243 @@
+{
+	"lights": {
+		"1": {
+			"state": {
+				"on": true,
+				"bri": 104,
+				"hue": 13393,
+				"sat": 204,
+				"effect": "none",
+				"xy": [
+					0.5052,
+					0.4151
+				],
+				"ct": 451,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Bank Hue",
+			"modelid": "LCT001",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:d3:66:c0-0b",
+			"swversion": "5.23.1.13452"
+		},
+		"2": {
+			"state": {
+				"on": false,
+				"bri": 71,
+				"hue": 14165,
+				"sat": 178,
+				"effect": "none",
+				"xy": [
+					0.4837,
+					0.4144
+				],
+				"ct": 410,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Bed Hue",
+			"modelid": "LCT001",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:ff:6a:3c-0b",
+			"swversion": "5.23.1.13452"
+		},
+		"4": {
+			"state": {
+				"on": false,
+				"bri": 81,
+				"alert": "none",
+				"reachable": true
+			},
+			"type": "Dimmable light",
+			"name": "Trap boven hue",
+			"modelid": "LWB004",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:de:50:4b-0b",
+			"swversion": "5.17.1.12040"
+		},
+		"5": {
+			"state": {
+				"on": true,
+				"bri": 150,
+				"alert": "none",
+				"reachable": true
+			},
+			"type": "Dimmable light",
+			"name": "Hal hue",
+			"modelid": "LWB004",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:de:4b:e2-0b",
+			"swversion": "5.17.1.12040"
+		},
+		"6": {
+			"state": {
+				"on": true,
+				"bri": 254,
+				"hue": 14197,
+				"sat": 177,
+				"effect": "none",
+				"xy": [
+					0.4829,
+					0.4144
+				],
+				"ct": 410,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Bol groot hue",
+			"modelid": "LCT001",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:ff:4a:48-0b",
+			"swversion": "5.23.1.13452"
+		},
+		"7": {
+			"state": {
+				"on": true,
+				"bri": 165,
+				"hue": 14165,
+				"sat": 178,
+				"effect": "none",
+				"xy": [
+					0.4837,
+					0.4144
+				],
+				"ct": 410,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Bol klein Hue",
+			"modelid": "LCT001",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:d3:4c:46-0b",
+			"swversion": "5.23.1.13452"
+		},
+		"8": {
+			"state": {
+				"on": true,
+				"bri": 201,
+				"hue": 13835,
+				"sat": 190,
+				"effect": "none",
+				"xy": [
+					0.4932,
+					0.415
+				],
+				"ct": 431,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium l1 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f7:8e:32-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"9": {
+			"state": {
+				"on": true,
+				"bri": 203,
+				"hue": 13835,
+				"sat": 190,
+				"effect": "none",
+				"xy": [
+					0.4932,
+					0.415
+				],
+				"ct": 431,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium r2 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f6:a3:ab-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"10": {
+			"state": {
+				"on": true,
+				"bri": 177,
+				"hue": 13835,
+				"sat": 190,
+				"effect": "none",
+				"xy": [
+					0.4932,
+					0.415
+				],
+				"ct": 431,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium l3 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f7:8b:6b-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"11": {
+			"state": {
+				"on": true,
+				"bri": 203,
+				"hue": 14165,
+				"sat": 178,
+				"effect": "none",
+				"xy": [
+					0.4837,
+					0.4144
+				],
+				"ct": 413,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium r3 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f7:8e:00-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"12": {
+			"state": {
+				"on": true,
+				"bri": 164,
+				"alert": "none",
+				"reachable": true
+			},
+			"type": "Dimmable light",
+			"name": "Tafel hue",
+			"modelid": "LWB004",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f6:97:bc-0b",
+			"swversion": "5.17.1.12040"
+		},
+		"13": {
+			"state": {
+				"on": true,
+				"bri": 152,
+				"hue": 14098,
+				"sat": 181,
+				"effect": "none",
+				"xy": [
+					0.4859,
+					0.4147
+				],
+				"ct": 416,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium l2 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f7:8b:df-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"14": {
+			"state": {
+				"on": true,
+				"bri": 203,
+				"hue": 13393,
+				"sat": 204,
+				"effect": "none",
+				"xy": [
+					0.5052,
+					0.4151
+				],
+				"ct": 454,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Podium r1 hue",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:00:f7:95:d5-0b",
+			"swversion": "5.38.1.14919"
+		}
+	},
+	"groups": {},
+	"config": {
+		"name": "Philips hue",
+		"zigbeechannel": 11,
+		"bridgeid": "001788FFFE176D7F",
+		"mac": "00:17:88:17:6d:7f",
+		"dhcp": true,
+		"ipaddress": "192.168.1.42",
+		"netmask": "255.255.255.0",
+		"gateway": "192.168.1.1",
+		"proxyaddress": "none",
+		"proxyport": 0,
+		"UTC": "2016-10-25T08:06:01",
+		"localtime": "2016-10-25T10:06:01",
+		"timezone": "Europe/Amsterdam",
+		"modelid": "BSB001",
+		"swversion": "01035934",
+		"apiversion": "1.15.0",
+		"swupdate": {
+			"updatestate": 2,
+			"checkforupdate": false,
+			"devicetypes": {
+				"bridge": false,
+				"lights": [
+					"4",
+					"5",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14"
+				],
+				"sensors": []
+			},
+			"url": "",
+			"text": "ZGB_100B_0105 - 5.38.2.19136",
+			"notify": false
+		},
+		"linkbutton": false,
+		"portalservices": true,
+		"portalconnection": "connected",
+		"portalstate": {
+			"signedon": true,
+			"incoming": true,
+			"outgoing": true,
+			"communication": "disconnected"
+		},
+		"factorynew": false,
+		"replacesbridgeid": null,
+		"backup": {
+			"status": "idle",
+			"errorcode": 0
+		},
+		"whitelist": {
+			"umPXlEVBEpVrepCJ59TkHZctOVxCiL1R": {
+				"last use date": "2016-10-25T08:06:01",
+				"create date": "2014-12-11T12:14:28",
+				"name": "VeraTest"
+			},
+			"ffffffffa93e536cfffffffff585616b": {
+				"last use date": "2015-03-21T21:58:41",
+				"create date": "2014-12-11T14:27:04",
+				"name": "Hue#Motorola XT1032"
+			},
+			"0000000054da1ac8fffffffff585616b": {
+				"last use date": "2016-10-25T07:03:13",
+				"create date": "2015-01-21T19:21:32",
+				"name": "Hue#Motorola XT1032"
+			},
+			"ffffffffa8494fdc499f48f0499f48f0": {
+				"last use date": "2016-10-23T18:18:12",
+				"create date": "2016-01-17T18:05:58",
+				"name": "Hue#Samsung SM-T810"
+			},
+			"DLV7dRi5eqV7-vcoCDnLcvwUAUiElSPftxpxrEVM": {
+				"last use date": "2016-10-14T07:01:09",
+				"create date": "2016-10-14T07:01:09",
+				"name": "iftttv2"
+			},
+			"WNqLAGOILLi-2ySFKfM8neWpUuIQPZGEn7aq6TOg": {
+				"last use date": "2016-10-25T08:06:01",
+				"create date": "2016-09-29T19:19:37",
+				"name": "my_hue_app#tjongjejonge"
+			}
+		}
+	},
+	"schedules": {},
+	"scenes": {
+		"873f2a1c8-on-0": {
+			"name": "Laila on 1454278987548",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:23:18",
+			"version": 1
+		},
+		"57a10b9e6-on-0": {
+			"name": "Jump! on 1454279009682",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:23:32",
+			"version": 1
+		},
+		"0b019c4af-on-0": {
+			"name": "Deep sea on 1453075685727",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"dd46a4bde-on-0": {
+			"name": "Kathy on 1453075691616",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"e915785b2-on-0": {
+			"name": "Lezen on 1418313932155",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"344ff16bf-on-0": {
+			"name": "Relaxen on 1454279095478",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:24:57",
+			"version": 1
+		},
+		"b8b2cbf66-on-0": {
+			"name": "Wekker on 1458168487384",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-03-16T22:48:12",
+			"version": 1
+		},
+		"ac637e2f0-on-0": {
+			"name": "Relaxen on 1418318739049",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"26247cdbc-on-0": {
+			"name": "Deep sea on 1418319281343",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"c81e728d9-off-0": {
+			"name": "Wekker off 1458168546799",
+			"lights": [
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-03-16T22:49:10",
+			"version": 1
+		},
+		"c0b54a2aa-on-0": {
+			"name": "Wekker on 1458168546799",
+			"lights": [
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-03-16T22:49:10",
+			"version": 1
+		},
+		"4d8852c76-off-0": {
+			"name": "Relaxen off 1454279022314",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:23:45",
+			"version": 1
+		},
+		"54ae5d997-on-0": {
+			"name": "Ski on 1418319424297",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"c77174f42-on-0": {
+			"name": "Taj on 1418319431506",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"91d9755e0-on-0": {
+			"name": "Relaxen on 1454279041721",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:24:04",
+			"version": 1
+		},
+		"84fa88aa5-on-0": {
+			"name": "Stimuleren on 1418319446674",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"948ce012e-on-0": {
+			"name": "Kathy on 1418319460979",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"b5d425ca4-on-0": {
+			"name": "Lampen aan on 1458670650751",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-03-22T18:17:36",
+			"version": 1
+		},
+		"ffeea09ee-on-0": {
+			"name": "Jump! on 1418553799268",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"ac2aa0533-off-0": {
+			"name": "Beneden off 1418769378197",
+			"lights": [
+				"1"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"d5c87f942-on-0": {
+			"name": "Beneden on 1418769378197",
+			"lights": [
+				"1"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"74e592844-on-0": {
+			"name": "Feet up on 1453075696029",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"96760b5e4-on-0": {
+			"name": "Concentrate on 1453075958829",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:19:39",
+			"version": 1
+		},
+		"286abbc4a-on-0": {
+			"name": "Ski on 1453075962072",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "none",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": null,
+			"version": 1
+		},
+		"256dff278-on-0": {
+			"name": "Sunset on 1453139036717",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-18T17:44:01",
+			"version": 1
+		},
+		"fb7f70773-on-0": {
+			"name": "Pencils on 1453139042946",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-18T17:44:06",
+			"version": 1
+		},
+		"d5fd21738-on-0": {
+			"name": "Relaxen on 1453139047390",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-18T17:44:12",
+			"version": 1
+		},
+		"ae6f7c3f7-off-0": {
+			"name": "Podium off 1453226561721",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-19T18:02:46",
+			"version": 1
+		},
+		"661c30e04-on-0": {
+			"name": "Podium on 1453226561723",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-19T18:02:48",
+			"version": 1
+		},
+		"b3867609b-off-0": {
+			"name": "Podium off 1453226681828",
+			"lights": [
+				"1",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-19T18:04:45",
+			"version": 1
+		},
+		"77444a3dd-on-0": {
+			"name": "Podium on 1453226681828",
+			"lights": [
+				"1",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-19T18:04:46",
+			"version": 1
+		},
+		"c9a243534-on-0": {
+			"name": "Stimuleren on 1453226685823",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-19T18:04:47",
+			"version": 1
+		},
+		"c8a94fa1b-off-0": {
+			"name": "Podium spots off 1454179799751",
+			"lights": [
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-30T18:50:03",
+			"version": 1
+		},
+		"a1ad5a1d0-on-0": {
+			"name": "Podium spots on 1454179799751",
+			"lights": [
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-30T18:50:04",
+			"version": 1
+		},
+		"ac5c94f75-on-0": {
+			"name": "Podium spots on 1454179909511",
+			"lights": [
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-30T18:51:52",
+			"version": 1
+		},
+		"decdac1cc-on-0": {
+			"name": "Lezen on 1454179919957",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-30T18:52:05",
+			"version": 1
+		},
+		"38c6e9879-on-0": {
+			"name": "Ski on 1454278769683",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:19:31",
+			"version": 1
+		},
+		"d27cc30e6-on-0": {
+			"name": "Beach on 1454278774748",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:19:35",
+			"version": 1
+		},
+		"8193c9b3b-on-0": {
+			"name": "Deep sea on 1454278780875",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:19:42",
+			"version": 1
+		},
+		"cfe927c75-on-0": {
+			"name": "Greece on 1454278787912",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:19:49",
+			"version": 1
+		},
+		"21ed5241e-on-0": {
+			"name": "Greece on 1454278838926",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:20:41",
+			"version": 1
+		},
+		"a65f9c4ff-on-0": {
+			"name": "Greece on 1454278872974",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:21:16",
+			"version": 1
+		},
+		"935f70b4f-on-0": {
+			"name": "Greece on 1454278941286",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:22:23",
+			"version": 1
+		},
+		"ed622fe68-on-0": {
+			"name": "Hammock on 1454278950650",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:22:31",
+			"version": 1
+		},
+		"a61e1cd09-on-0": {
+			"name": "Hammock on 1454278966213",
+			"lights": [
+				"1",
+				"2",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:22:49",
+			"version": 1
+		},
+		"991895676-on-0": {
+			"name": "Laila on 1454278972145",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:22:53",
+			"version": 1
+		},
+		"71b771519-on-0": {
+			"name": "Jump! on 1454278999735",
+			"lights": [
+				"1",
+				"2"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:23:20",
+			"version": 1
+		},
+		"105015097-on-0": {
+			"name": "Relaxen on 1454279022314",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:23:46",
+			"version": 1
+		},
+		"fbe7486d1-on-0": {
+			"name": "Relaxen on 1454279060750",
+			"lights": [
+				"1",
+				"2",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"13",
+				"14"
+			],
+			"owner": "0000000054da1ac8fffffffff585616b",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-01-31T22:24:23",
+			"version": 1
+		}
+	},
+	"rules": {},
+	"sensors": {
+		"1": {
+			"state": {
+				"daylight": null,
+				"lastupdated": "none"
+			},
+			"config": {
+				"on": true,
+				"configured": false,
+				"sunriseoffset": 30,
+				"sunsetoffset": -30
+			},
+			"name": "Daylight",
+			"type": "Daylight",
+			"modelid": "PHDL00",
+			"manufacturername": "Philips",
+			"swversion": "1.0"
+		}
+	},
+	"resourcelinks": {}
+}
