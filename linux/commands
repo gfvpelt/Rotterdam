@@ -51,6 +51,14 @@ screen -r <naam> is terug gaan
 
 screen eruit geen extit... maar cntr-a d
 
+welke crontab's draaien er per user:
+sudo crontab -l
+crontab -l
+edit een nieuwe crontab
+crontab -e
+
+execute a script in -> /bin/execute/
+* * * * * (min0-59 hour0-23 day1-31 month1-12 week0-6)
 
 rechten van directory's enzo
 	/usr/lib/tmpfiles.d

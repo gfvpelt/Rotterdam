@@ -1,0 +1,8 @@
+isitrunning=`virsh list | grep haglab-win2012-pac-bert-2 | awk '{print$3}'`
+itsrunning="running"
+if [ "$isitrunning" == "$itsrunning" ]; then
+echo " all fine "
+else
+echo " jammer... maar nu start ik hem "
+`virsh start haglab-win2012-pac-bert-2`
+fi
