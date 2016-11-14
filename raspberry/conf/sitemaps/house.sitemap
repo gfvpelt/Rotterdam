@@ -1,0 +1,275 @@
+sitemap house label="Huis"
+{
+	Frame label="Domotica Huis" {
+		Group label="Begane grond" icon="groundfloor" {
+			Group label="Woonkamer" icon="video" {
+				Frame label="Verlichting" {
+					Switch item=Light2_Toggle
+					Switch item=Light3_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker 	item=Light2_Color 	visibility=[Light2_Toggle==ON]					
+					Slider 		item=Light2_Dimmer 	visibility=[Light2_Toggle==ON]					
+					Slider 		item=Light2_ColorTemp 	visibility=[Light2_Toggle==ON]					
+					Colorpicker 	item=Light3_Color 	visibility=[Light3_Toggle==ON]					
+					Slider 		item=Light3_Dimmer 	visibility=[Light3_Toggle==ON]					
+					Slider 		item=Light3_ColorTemp 	visibility=[Light3_Toggle==ON]					
+				}				
+				Frame label="Stroom" {
+					Switch item=Switch_Powerbar1_Televisie icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_Televisie visibility=[Switch_Powerbar1_Televisie==ON]					
+					Switch item=Switch_Powerbar1_WIIU icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_WIIU visibility=[Switch_Powerbar1_WIIU==ON]					
+					Switch item=Switch_Powerbar1_HTPC icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_HTPC visibility=[Switch_Powerbar1_HTPC==ON]					
+					Switch item=Switch_Powerbar1_Versterker icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_Versterker visibility=[Switch_Powerbar1_Versterker==ON]					
+					Switch item=Switch_Powerbar1_Chromecast icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_Chromecast visibility=[Switch_Powerbar1_Chromecast==ON]					
+					Switch item=Switch_Powerbar1_TV_Ontvanger icon="poweroutlet-eu"					
+					Text item=Power_Powerbar1_TV_Ontvanger visibility=[Switch_Powerbar1_TV_Ontvanger==ON]					
+					Switch item=Stroomplug_3 icon="poweroutlet-eu"
+					Text item=Stroomplug_3W	visibility=[Stroomplug_3==ON]
+				}				
+				Frame label="Huiskamer 5.1 surround" {
+					Default item=Playbar_Controller
+					Slider  item=Playbar_Volume
+					Switch  item=Playbar_Mute
+					Switch  item=Playbar_LED
+					Switch  item=RearLeft_LED
+					Switch  item=RearRight_LED
+					Text    item=Playbar_CurrentTrack
+					Text    item=Playbar_State
+					Switch	item=PlaybarRadioStations mappings=["538 Non Stop"="538","BNR Nieuwsradio 91.3 (National News)"="BNR","100% NL 104.6 (Dutch Music)"="100% NL","Fresh FM 95.6 (House)"="Fresh FM","SLAM!"="SLAM!"]]
+				}				
+			}			
+			Group label="Keuken" icon="kitchen" {
+				Frame label="Verlichting" {
+					Switch item=Light10_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker item=Light10_Color visibility=[Light10_Toggle==ON]					
+					Slider item=Light10_Dimmer visibility=[Light10_Toggle==ON]					
+					Slider item=Light10_ColorTemp visibility=[Light10_Toggle==ON]					
+				}				
+			}			
+			Group label="Toilet" icon="bath" {
+				Frame label="Verlichting" {
+					Switch item=Light7_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light7_Dimmer visibility=[Light7_Toggle==ON]					
+				}				
+			}			
+			Group label="Meterkast" icon="energy" {
+				Frame label="Stroom" {
+					Switch item=Stroomplug_1					
+					Text item=Stroomplug_1W visibility=[Stroomplug_1==ON]					
+				}				
+			}			
+			Group label="Overloop" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch item=Light6_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light6_Dimmer visibility=[Light6_Toggle==ON]					
+				}				
+			}			
+			Group label="Portaal" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch item=Light11_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light11_Dimmer visibility=[Light11_Toggle==ON]					
+				}				
+			}			
+			Switch item=LightsGF mappings=[OFF="Uit", ON="Aan"]			
+		}		
+		Group label="1ste verdieping" icon="firstfloor" {
+			Group label="Badkamer" icon="bath" {
+				Frame label="Verlichting" {
+					Switch item=Light8_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light8_Dimmer visibility=[Light8_Toggle==ON]					
+				}				
+			}			
+			Group label="Luuk" icon="boy_1" {
+				Frame label="Verlichting" {
+					Switch item=Light12_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker item=Light12_Color visibility=[Light12_Toggle==ON]					
+					Slider item=Light12_Dimmer visibility=[Light12_Toggle==ON]					
+					Slider item=Light12_Color_Temp visibility=[Light12_Toggle==ON]					
+				}				
+			}			
+			Group label="Jim" icon="boy_2" {
+				Frame label="Verlichting" {
+					Switch item=Light13_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker item=Light13_Color visibility=[Light13_Toggle==ON]					
+					Slider item=Light13_Dimmer visibility=[Light13_Toggle==ON]					
+					Slider item=Light13_Color_Temp visibility=[Light13_Toggle==ON]					
+				}				
+			}			
+			Group label="Werkkamer" icon="office" {
+				Frame label="Verlichting" {
+					Switch item=Light4_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker item=Light4_Color visibility=[Light4_Toggle==ON]					
+					Slider item=Light4_Dimmer visibility=[Light4_Toggle==ON]					
+					Slider item=Light4_ColorTemp visibility=[Light4_Toggle==ON]					
+				}				
+				Frame label="Stroom" {
+					Switch item=Stroomplug_2 icon="poweroutlet-eu"
+					Text item=Stroomplug_2W	visibility=[Stroomplug_2==ON]
+				}
+			}			
+			Group label="Overloop" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch item=Light5_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light5_Dimmer visibility=[Light5_Toggle==ON]					
+				}				
+			}			
+			Switch item=LightsFF mappings=[OFF="Uit", ON="Aan"]			
+		}		
+		Group label="2de verdieping" icon="attic" {
+			Group label="Slaapkamer" icon="bedroom" {
+				Frame label="Verlichting" {
+					Switch item=Light1_Toggle
+				}				
+				Frame label="Extra controle" {
+					Colorpicker item=Light1_Color visibility=[Light1_Toggle==ON]					
+					Slider item=Light1_Dimmer visibility=[Light1_Toggle==ON]					
+					Slider item=Light1_ColorTemp visibility=[Light1_Toggle==ON]					
+				}				
+			}			
+			Group label="Inloop kast" icon="wardrobe" {
+				Frame label="Verlichting" {
+					Switch item=Light15_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light15_Dimmer visibility=[Light15_Toggle==ON]					
+				}				
+			}			
+			Group label="Washok" icon="washingmachine" {
+				Frame label="Verlichting" {
+					Text label="TBD" icon="house-off"					
+				}				
+				Frame label="Extra controle" {
+					Text label="TBD" icon="house-off"					
+				}				
+			}			
+			Group label="Knieschot" icon="corridor" {
+				Frame label="Stroom" {
+					Text label="TBD" icon="house-off"					
+				}				
+			}			
+			Group label="Overloop" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch item=Light9_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light9_Dimmer visibility=[Light9_Toggle==ON]					
+				}				
+			}
+			Switch item=LightsSF mappings=[OFF="ALL OFF", ON="ALL ON"]			
+		}
+		Group label="Tuin" icon="garden" {
+			Group label="Voortuin" icon="garden" {
+				Frame label="Verlichting" {
+					Switch item=Light14_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light14_Dimmer visibility=[Light14_Toggle==ON]					
+				}				
+			}			
+			Group label="Achtertuin" icon="garden" {
+				Frame label="Verlichting" {
+					Switch item=Light16_Toggle
+				}				
+				Frame label="Extra controle" {
+					Slider item=Light16_Dimmer visibility=[Light16_Toggle==ON]					
+				}				
+			}			
+		}
+	}  	
+	Frame label="Scenes" {
+		Text label="Favorieten" icon="house-off" {
+			Frame label="Algemeen" {
+				Switch item=Scene_huis_uit label="Huis uit!" mappings=[1="Activeer!"]				
+				Switch item=Scene_naar_bed label="Naar bed!" mappings=[1="Activeer!"]				
+			}			
+			Frame label="Verlichting" {
+				Switch item=Lights mappings=[OFF="Uit", ON="Aan"]
+				Switch item=LightsGF mappings=[OFF="Uit", ON="Aan"] label="Begane grond"
+				Switch item=LightsFF mappings=[OFF="Uit", ON="Aan"] label="1ste verdieping"	
+				Switch item=LightsSF mappings=[OFF="Uit", ON="Aan"] label="2de verdieping"	
+			}			
+			Frame label="Multimedia" {
+				Switch item=Scene_TV_kijken label="TV kijken" mappings=[1="Activeer!"]				
+				Switch item=Scene_Chromecast label="Chromecast" mappings=[1="Activeer!"]				
+				Switch item=Scene_WiiU_gamen label="Wii U gamen" mappings=[1="Activeer!"]				
+				Switch item=Scene_WiiU_plus_Chromecast label="Wii U + Chromecast" mappings=[1="Activeer!"]				
+				Switch item=Scene_WiiU_plus_TV_kijken label="Wii U + TV kijken" mappings=[1="Activeer!"]				
+				Switch item=Scene_Multimedia_streamen label="Multimedia streamen" mappings=[1="Activeer!"]				
+			}			
+			Frame label="Test!!" {
+				Switch item=Scene_test mappings=[1="Activeer!"]
+			}
+		}		
+	}	
+	Frame label="Multimedia" {
+		Text label="Geluid" icon="recorder" {
+			Frame label="Huiskamer 5.1 surround" {
+				Default item=Playbar_Controller
+				Slider  item=Playbar_Volume
+				Switch  item=Playbar_Mute
+				Switch  item=Playbar_LED
+				Switch  item=RearLeft_LED
+				Switch  item=RearRight_LED
+				Text    item=Playbar_CurrentTrack
+				Text    item=Playbar_State
+				Switch	item=PlaybarRadioStations mappings=["538 Non Stop"="538","BNR Nieuwsradio 91.3 (National News)"="BNR","100% NL 104.6 (Dutch Music)"="100% NL","Fresh FM 95.6 (House)"="Fresh FM","SLAM!"="SLAM!"]]
+			}				
+			Frame label="Jim's kamer" {
+				Default item=Jim_Controller
+				Slider  item=Jim_Volume
+				Switch  item=Jim_Mute
+				Switch  item=Jim_LED
+				Text    item=Jim_CurrentTrack
+				Text    item=Jim_State
+			}				
+		}		
+	}	
+	Frame label="Klimaat en Weer" {
+	 	Text 	item=Date label="Datum"
+		Text 	item=Zonsopkomst label="Zonsopkomst"
+		Text 	item=Zonsondergang label="Zonsondergang"
+		Text	item=Temperature_Wassenaar label="Temperatuur wassenaar"
+		Text	item=Humidity_Wassenaar label="Luchtvochtigheid wassenaar"
+		Text	item=Pressure_Wassenaar label="Luchtdruk wassenaar"
+		//Text	item=Wind snelheid
+	}	
+
+	Frame label="Beveiliging en Monitoring" {
+		Text label="TBD" icon="house-off" {
+			Text    item=Date
+		}
+	}
+	Frame label="Instellingen" {
+		Text label="Algemeen" icon="settings" {
+			Switch  item=Wormen_aanwezig
+			Switch 	item=Ochtendschemering_proxy
+			Switch	item=Dag_proxy
+			Switch	item=Avondschemering_proxy
+			Switch	item=Nacht_proxy
+			Text item=Wall_Switch1_Batterij label="Batterij [%d]"
+		}
+	}
+}
