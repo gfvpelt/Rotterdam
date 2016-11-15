@@ -1,8 +1,0 @@
-Strategies {
-	default = everyUpdate
-}
-
-Items {
-	// persist all items on every change and restore them from the db at startup
-	* : strategy = everyChange, restoreOnStartup
-}

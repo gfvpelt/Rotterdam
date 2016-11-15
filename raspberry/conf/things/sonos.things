@@ -1,4 +1,0 @@
-Thing sonos:PLAY1:jim [udn="RINCON_5CAAFD96D20601400", refresh=60]
-Thing sonos:PLAYBAR:living [udn="RINCON_5CAAFDA85DA001400", refresh=60]
-Thing sonos:PLAY1:livingr [udn="RINCON_5CAAFD9E1ABA01400", refresh=60]
-Thing sonos:PLAY1:livingl [udn="RINCON_5CAAFD9E1A9E01400", refresh=60]

@@ -1,4 +1,0 @@
-// WOEID wassenaar: 734528
-Number Temperature_Wassenaar 		"Temperatuur buiten" <temperature>			{ channel="yahooweather:weather:wassenaar:temperature" }
-Number Humidity_Wassenaar 		"Luchtvochtigheid buiten" <humidity>		{ channel="yahooweather:weather:wassenaar:humidity" }
-Number Pressure_Wassenaar		"Luchtdruk buiten" <pressure>			{ channel="yahooweather:weather:wassenaar:pressure" }
