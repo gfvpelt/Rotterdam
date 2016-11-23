@@ -1,0 +1,29 @@
+Player Playbar_Controller	"Controller"			<player>		(Sonos) 	{channel="sonos:PLAYBAR:living:control"}
+Dimmer Playbar_Volume		"Volume [%.1f %%]" 		<soundvolume>      	(Sonos)		{channel="sonos:PLAYBAR:living:volume"}
+Switch Playbar_Mute		"Mute"             		<soundvolume_mute> 	(Sonos)		{channel="sonos:PLAYBAR:living:mute"}
+Switch Playbar_LED		"Playbar LED"              	<rgb>           	(Sonos)		{channel="sonos:PLAYBAR:living:led"}
+String Playbar_CurrentTrack	"Now playing [%s]" 		<text>             	(Sonos)		{channel="sonos:PLAYBAR:living:currenttrack"}
+String Playbar_State		"Status [%s]"   		<text>             	(Sonos)		{channel="sonos:PLAYBAR:living:state"}
+
+Player RearLeft_Controller	"Controller"			<player>		(Sonos) 	{channel="sonos:PLAY1:livingl:control"}
+Dimmer RearLeft_Volume		"Volume [%.1f %%]" 		<soundvolume>      	(Sonos)		{channel="sonos:PLAY1:livingl:volume"}
+Switch RearLeft_Mute		"Mute"             		<soundvolume_mute> 	(Sonos)		{channel="sonos:PLAY1:livingl:mute"}
+Switch RearLeft_LED		"Rear Left LED"       		<rgb>           	(Sonos)		{channel="sonos:PLAY1:livingl:led"}
+String RearLeft_CurrentTrack	"Now playing [%s]" 		<text>             	(Sonos)		{channel="sonos:PLAY1:livingl:currenttrack"}
+String RearLeft_State		"Status [%s]"      		<text>             	(Sonos)		{channel="sonos:PLAY1:livingl:state"}
+
+Player RearRight_Controller	"Controller"			<player>		(Sonos) 	{channel="sonos:PLAY1:livingr:control"}
+Dimmer RearRight_Volume		"Volume [%.1f %%]" 		<soundvolume>      	(Sonos)		{channel="sonos:PLAY1:livingr:volume"}
+Switch RearRight_Mute		"Mute"             		<soundvolume_mute> 	(Sonos)		{channel="sonos:PLAY1:livingr:mute"}
+Switch RearRight_LED		"Rear Right LED"      		<rgb>           	(Sonos)		{channel="sonos:PLAY1:livingr:led"}
+String RearRight_CurrentTrack	"Now playing [%s]" 		<text>             	(Sonos)		{channel="sonos:PLAY1:livingr:currenttrack"}
+String RearRight_State		"Status [%s]"      		<text>             	(Sonos)		{channel="sonos:PLAY1:livingr:state"}
+
+Player Jim_Controller		"Controller"			<player>		(Sonos) 	{channel="sonos:PLAY1:jim:control"}
+Dimmer Jim_Volume		"Volume [%.1f %%]" 		<soundvolume>      	(Sonos)		{channel="sonos:PLAY1:jim:volume"}
+Switch Jim_Mute			"Mute"             		<soundvolume_mute> 	(Sonos)		{channel="sonos:PLAY1:jim:mute"}
+Switch Jim_LED			"LED"              		<rgb>           	(Sonos)		{channel="sonos:PLAY1:jim:led"}
+String Jim_CurrentTrack		"Now playing [%s]" 		<text>             	(Sonos)		{channel="sonos:PLAY1:jim:currenttrack"}
+String Jim_State		"Status [%s]"      		<text>             	(Sonos)		{channel="sonos:PLAY1:jim:state"}
+
+String PlaybarRadioStations	"Radio stations"		<player>		(Sonos)		{channel="sonos:PLAYBAR:living:radio"}

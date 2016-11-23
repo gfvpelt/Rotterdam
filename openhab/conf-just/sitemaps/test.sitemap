@@ -1,0 +1,26 @@
+sitemap house label="Huis"
+{
+	Frame label="Domotica Huis" {
+		Group label="Woonkamer" icon="video" {
+			Frame label="Verlichting" {
+                                Slider item=Light2_Dimmer visibility=[Light2_Toggle==ON]
+				Switch item=Light1_Toggle
+				Switch item=Light2_Toggle
+				Switch item=Light3_Toggle
+				Switch item=Light4_Toggle
+				Switch item=Light5_Toggle
+				Switch item=Light6_Toggle
+				Switch item=Light7_Toggle
+				Switch item=Light8_Toggle
+				Switch item=Light9_Toggle
+				Switch item=Light10_Toggle
+				Switch item=Light11_Toggle
+				Switch item=Light12_Toggle
+				Switch item=Light13_Toggle
+				Switch item=Light14_Toggle
+				Switch item=Light15_Toggle
+				Switch item=Light16_Toggle
+			}
+		}
+	}
+}

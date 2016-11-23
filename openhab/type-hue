@@ -1,3 +1,7 @@
 tafel/Hal/boven 	LWB004 3x
 bol/bank/bed		LCT001 4x
 rest 			LCT007 6x
+
+
+https://github.com/eclipse/smarthome/blob/master/extensions/binding/org.eclipse.smarthome.binding.hue/README.md#full-example
+

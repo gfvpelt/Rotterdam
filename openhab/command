@@ -9,3 +9,9 @@ sitemaps
 rules 
 items (elk lampje)
 
+Console access
+ssh openhab@localhost -p 8101
+Username/Password is openhab/habopen
+	commands zijn niet echt documented... use TAB... 
+	smarthome:links clear etcetc..
+
