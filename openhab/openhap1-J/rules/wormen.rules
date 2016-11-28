@@ -1,0 +1,20 @@
+// Proxy calculatie voor ochtendschemering,dag,avondschemering,nacht
+
+rule "Wormen verlichting aan"
+when
+	Item Avondschemering_event received update ON
+then
+        if(Wormen_aanwezig.state==ON) {
+                sendCommand(Toggle_16,ON)
+                sendCommand(Dimm_16,40)
+	}
+end
+
+rule "Wormen verlichting uit"
+when
+	Item Zonopkomst_event received update ON
+then
+        if(Wormen_aanwezig.state==ON) {
+                sendCommand(Toggle_16,OFF)
+	}
+end

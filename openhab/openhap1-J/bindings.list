@@ -1,0 +1,10 @@
+org.openhab.binding.astro
+org.openhab.binding.http
+org.openhab.binding.hue
+org.openhab.binding.ntp
+org.openhab.binding.onkyo
+org.openhab.binding.zwave
+org.openhab.io.habmin
+org.openhab.persistence.exec
+org.openhab.persistence.logging
+org.openhab.persistence.rrd4j

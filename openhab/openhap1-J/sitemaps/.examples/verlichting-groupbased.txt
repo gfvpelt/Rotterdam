@@ -1,0 +1,10 @@
+sitemap demo label="House"
+{
+	//Frame label="Verlichting-group" {
+	//	Group item=gGF label="Begaande grond" icon="groundfloor"
+	//	Group item=gFF label="1ste verdieping" icon="firstfloor"
+	//	Group item=gSF label="2de verdieping" icon="attic"	
+	//	Group item=Outdoor icon="garden" 
+	//}
+	Frame label="Verlichting" {
+		Group label="Begaande grond" icon="groundfloor"  {

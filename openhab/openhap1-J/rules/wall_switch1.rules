@@ -1,0 +1,111 @@
+rule "Wall_Switch1 LB enkele knop"
+when
+	Item Wall_Switch1_LB_EK received update ON
+then
+	sendCommand(Toggle_1,OFF)
+	logDebug("kitchen", "LB 1x indrukken")
+end
+
+rule "Wall_Switch1 LO enkele knop"
+when
+	Item Wall_Switch1_LO_EK received update ON
+then
+	logDebug("kitchen", "LO 1x indrukken")
+end
+
+rule "Wall_Switch1 RB enkele knop"
+when
+	Item Wall_Switch1_RB_EK received update ON
+then
+	logDebug("kitchen", "RB 1x indrukken")
+end
+
+rule "Wall_Switch1 RO enkele knop"
+when
+	Item Wall_Switch1_RO_EK received update ON
+then
+	logDebug("kitchen", "RO 1x indrukken")
+end
+
+rule "Wall_Switch1 LB dubbele knop"
+when
+	Item Wall_Switch1_LB_DK received update ON
+then
+	logDebug("kitchen", "LB 2x indrukken")
+end
+
+rule "Wall_Switch1 LO dubbele knop"
+when
+	Item Wall_Switch1_LO_DK received update ON
+then
+	logDebug("kitchen", "LO 2x indrukken")
+end
+
+rule "Wall_Switch1 RB dubbele knop"
+when
+	Item Wall_Switch1_RB_DK received update ON
+then
+	logDebug("kitchen", "RB 2x indrukken")
+end
+
+rule "Wall_Switch1 RO dubbele knop"
+when
+	Item Wall_Switch1_RO_DK received update ON
+then
+	logDebug("kitchen", "RO 2x indrukken")
+end
+
+rule "Wall_Switch1 LB long press"
+when
+	Item Wall_Switch1_LB_LE received update ON
+then
+	logDebug("kitchen", "LB Lang eind")
+end
+
+rule "Wall_Switch1 LO long press"
+when
+	Item Wall_Switch1_LO_LE received update ON
+then
+	logDebug("kitchen", "LO Lang eind")
+end
+
+rule "Wall_Switch1 RB long press"
+when
+	Item Wall_Switch1_RB_LE received update ON
+then
+	logDebug("kitchen", "RB Lang eind")
+end
+
+rule "Wall_Switch1 RO long press"
+when
+	Item Wall_Switch1_RO_LE received update ON
+then
+	logDebug("kitchen", "RO Lang eind")
+end
+rule "Wall_Switch1 LB long press"
+when
+	Item Wall_Switch1_LB_LS received update ON
+then
+	logDebug("kitchen", "LB Lang start")
+end
+
+rule "Wall_Switch1 LO long press"
+when
+	Item Wall_Switch1_LO_LS received update ON
+then
+	logDebug("kitchen", "LO Lang start")
+end
+
+rule "Wall_Switch1 RB long press"
+when
+	Item Wall_Switch1_RB_LS received update ON
+then
+	logDebug("kitchen", "RB Lang start")
+end
+
+rule "Wall_Switch1 RO long press"
+when
+	Item Wall_Switch1_RO_LS received update ON
+then
+	logDebug("kitchen", "RO Lang start")
+end

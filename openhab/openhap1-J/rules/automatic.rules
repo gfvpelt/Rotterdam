@@ -1,0 +1,63 @@
+import org.openhab.core.library.types.*
+import org.openhab.core.persistence.*
+import org.openhab.model.script.actions.*
+
+//Dag begint
+rule "Ochtend events"
+when
+	// 7 uur in de ochtend
+	Time cron "0 0 7 * * ?" 
+then
+	if (Dag_proxy.state==OFF) {
+		// Het is nog donker dus huis verlichting aan
+		logDebug("kitchen", "07:00 uur en het is nog geen dag, doe maar het licht aan" + Dag_proxy + ".")
+		sendCommand(Toggle_2,ON)
+		sendCommand(Toggle_3,ON)
+	} else {
+		logDebug("kitchen", "07:00 uur en het is al dag, doe maar geen licht aan" + Dag_proxy + ".")
+		// Het is licht geen verlichting aan
+	}
+end
+
+rule "1 uur na zonsopkomst events"
+when
+	Item Zon_volledig_opgekomen_switch received update ON
+then
+	//Alle verlichting uit
+	logDebug("kitchen", "Het is 1 uur na zonsopkomst, al het licht uit!" + Dag_proxy + ".")
+	sendCommand(Lights,OFF)
+end
+
+rule "Events om 10 uur in de ochtend"
+when
+	Time cron "0 0 10 * * ?" 
+then
+	//Alle verlichting uit
+	logDebug("kitchen", "10 uur in de ochtend, als er licht nog brand is deze waarschijnlijk vergeten!" + Dag_proxy + ".")
+	sendCommand(Lights,OFF)
+end
+
+rule "Avondschemering events"
+when
+	Time cron "0 30 17 * * ?" 
+then
+	//Huiskamer
+	sendCommand(Toggle_2,ON)
+	sendCommand(Toggle_3,ON)
+
+	//Buiten verlichting
+	sendCommand(Toggle_14,ON)
+	sendCommand(Dimm_14,50)
+end
+
+rule "Laat in de nacht events 2 uur"
+when
+	Time cron "0 0 2 * * ?"
+then
+	sendCommand(Lights,OFF)
+end
+
+// zonsopgang laatst is jan: 08:48
+// zonsopgang vroegst is 05:18 (juni)
+// zonsondergang vroegst is: 16:27 (dec)
+// zonsondergang laatste is: 22:04 (juni)

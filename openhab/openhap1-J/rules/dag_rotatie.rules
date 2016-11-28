@@ -1,0 +1,36 @@
+import org.openhab.core.library.types.*
+import org.openhab.core.persistence.*
+import org.openhab.model.script.actions.*
+
+// Proxy calculatie voor ochtendschemering,dag,avondschemering,nacht
+rule "Ochtendschemering"
+when
+	Item Ochtendschemering_event received update ON
+then
+	Nacht_proxy.sendCommand(OFF)
+	Ochtendschemering_proxy.sendCommand(ON)
+end
+
+rule "Dag"
+when
+	Item Zonopkomst_event received update ON
+then
+	Ochtendschemering_proxy.sendCommand(OFF)
+	Dag_proxy.sendCommand(ON)
+end
+
+rule "Avondschemering"
+when
+	Item Avondschemering_event received update ON
+then
+	Dag_proxy.sendCommand(OFF)
+	Avondschemering_proxy.sendCommand(ON)
+end
+
+rule "Nacht"
+when
+	Item Zonsondergang_event received update ON
+then
+	Avondschemering_proxy.sendCommand(OFF)
+	Nacht_proxy.sendCommand(ON)
+end

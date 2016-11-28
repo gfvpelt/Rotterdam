@@ -1,0 +1,61 @@
+Switch Toggle_1				"Hanglamp"   					(SF_Slaapkamer,Lights,LightsSF) 	{hue="1"}
+Dimmer Dimm_1    		 	"Hanglamp - helderheid"   			(WhiteDimmer)   			{hue="1;brightness;30"}
+Color Color_1    		 	"Hanglamp - kleuren" 				(Kleurlamp)  				{hue="1"}
+Dimmer CT_Dimm_1 		 	"Hanglamp - kleuren temperatuur"		(CTDimmer)  				{hue="1;colorTemperature;30"}
+
+Switch Toggle_2 		  	"Muur kant"   					(GF_Woonkamer,Lights,LightsGF) 		{hue="2"}
+Dimmer Dimm_2   		  	"Muur kant - helderheid"   			(WhiteDimmer)   			{hue="2;brightness;30"}
+Color Color_2   			"Muur kant - kleuren"   			(Kleurlamp) 				{hue="2"}
+Dimmer CT_Dimm_2 			"Muur kant - kleuren temperatuur" 	  	(CTDimmer)  				{hue="2;colorTemperature;30"}
+
+Switch Toggle_3 		  	"Raam kant"   					(GF_Woonkamer,Lights,LightsGF) 		{hue="3"}
+Dimmer Dimm_3   		  	"Raam kant - helderheid"	   		(WhiteDimmer)   			{hue="3;brightness;30"}
+Color Color_3   			"Raam kant - kleuren"	   			(Kleurlamp) 				{hue="3"}
+Dimmer CT_Dimm_3 			"Raam kant - kleuren temperatuur"   		(CTDimmer)  				{hue="3;colorTemperature;30"}
+
+Switch Toggle_4 		  	"Iris livingcolor"   				(FF_Werkkamer,Lights,LightsFF) 		{hue="4"}
+Dimmer Dimm_4   		  	"Iris livingcolor - helderheid"  	 	(WhiteDimmer)   			{hue="4;brightness;30"}
+Color Color_4   			"Iris livingcolor - kleuren"   			(Kleurlamp) 				{hue="4"}
+Dimmer CT_Dimm_4			"Iris livingcolor - kleuren temperatuur"	(CTDimmer)  				{hue="4;colorTemperature;30"}
+
+Switch Toggle_5 		  	"Overloop"   					(FF_Overloop,Lights,LightsFF) 		{hue="5"}
+Dimmer Dimm_5   		  	"Overloop"   					(WhiteDimmer)   			{hue="5;brightness;30"}
+
+Switch Toggle_6 		  	"Plafond"	   				(GF_Overloop,Lights,LightsGF) 		{hue="6"}
+Dimmer Dimm_6   		  	"Plafond"   					(WhiteDimmer)   			{hue="6;brightness;30"}
+
+Switch Toggle_7 		  	"Plafond"   					(GF_Toilet,Lights,LightsGF) 		{hue="7"}
+Dimmer Dimm_7   		  	"Plafond"   					(WhiteDimmer)   			{hue="7;brightness;30"}
+
+Switch Toggle_8 		  	"Plafond"   					(FF_Bad,Lights,LightsFF) 		{hue="8"}
+Dimmer Dimm_8   		  	"Plafond"   					(WhiteDimmer)   			{hue="8;brightness;30"}
+
+Switch Toggle_9  		 	"Overloop"   					(SF_Overloop,Lights,LightsSF) 		{hue="9"}
+Dimmer Dimm_9    		 	"Overloop"   					(WhiteDimmer)   			{hue="9;brightness;30"}
+
+Switch Toggle_10 		  	"Hanglamp"   					(GF_Keuken,Lights,LightsGF) 		{hue="10"}
+Dimmer Dimm_10   		  	"Hanglamp"	   				(WhiteDimmer)   			{hue="10;brightness;30"}
+Color Color_10   			"Hanglamp"   					(Kleurlamp) 				{hue="10"}
+Dimmer CT_Dimm_10  		    	"Hanglamp"   					(CTDimmer)  				{hue="10;colorTemperature;30"}
+
+Switch Toggle_11   			"Plafond"   					(GF_Portaal,Lights,LightsGF) 		{hue="11"}
+Dimmer Dimm_11     			"Plafond"   					(WhiteDimmer)   			{hue="11;brightness;30"}
+
+Switch Toggle_12 		  	"Hanglamp"   					(FF_Luuk,Lights,LightsFF) 		{hue="12"}
+Dimmer Dimm_12   		  	"Hanglamp"	   				(WhiteDimmer)   			{hue="12;brightness;30"}
+Color Color_12   			"Hanglamp"   					(Kleurlamp) 				{hue="12"}
+Dimmer CT_Dimm_12  		    	"Hanglamp"   					(CTDimmer)  				{hue="12;colorTemperature;30"}
+
+Switch Toggle_13		   	"Hanglamp"   					(FF_Jim,Lights,LightsFF) 		{hue="13"}
+Dimmer Dimm_13  		   	"Hanglamp"   					(WhiteDimmer)   			{hue="13;brightness;30"}
+Color Color_13  		 	"Hanglamp"  	 				(Kleurlamp) 				{hue="13"}
+Dimmer CT_Dimm_13			"Hanglamp"   					(CTDimmer)  				{hue="13;colorTemperature;30"}
+
+Switch Toggle_14   			"Voordeur plafond"   				(GF_Voortuin,Lights,LightsGF) 		{hue="14"}
+Dimmer Dimm_14   	  		"Voordeur plafond"   				(WhiteDimmer)   			{hue="14;brightness;30"}
+
+Switch Toggle_15 		  	"Hanglamp"   					(SF_Inloop_kast,Lights,LightsSF) 	{hue="15"}
+Dimmer Dimm_15     			"Hanglamp"   					(WhiteDimmer)   			{hue="15;brightness;30"}
+
+Switch Toggle_16 		  	"Hanglamp - Schuur"   				(gAchtertuin) 				{hue="16"}
+Dimmer Dimm_16     			"Hanglamp - Schuur"   				(WhiteDimmer)   			{hue="16;brightness;30"}

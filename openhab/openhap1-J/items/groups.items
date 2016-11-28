@@ -1,0 +1,44 @@
+Group All
+Group gGF 											(All)
+Group gFF 											(All)
+Group gSF 											(All)
+Group gAchtertuin										(All)
+Group Shutters 											(All)
+Group Weather											(All)
+Group Status 											(All)
+Group Kleurlamp											(All)
+Group Tijd_proxy										(All)
+
+//Begaande grond
+Group GF_Woonkamer			"Woonkamer" 			<video> 		(gGF)
+Group GF_Keuken				"Keuken" 			<kitchen> 		(gGF)
+Group GF_Overloop			"Overloop" 			<corridor>	 	(gGF)
+Group GF_Toilet 			"Toilet" 			<bath> 			(gGF)
+Group GF_Meterkast			"Meterkast" 			<energy> 		(gGF)
+Group GF_Portaal 			"Portaal" 			<corridor>	 	(gGF)
+Group GF_Voortuin			"Voortuin" 			<garden>	 	(gGF)
+Group GF_Achtertuin			"Achtertuin" 			<garden>	 	(gGF)
+
+//1ste verdieping
+Group FF_Bad 				"Badkamer" 			<bath>	 		(gFF)
+Group FF_Luuk				"Luuk" 				<boy0> 			(gFF)
+Group FF_Jim				"Jim"	 			<child1>		(gFF)
+Group FF_Werkkamer			"Werkkamer"			<office>		(gFF)
+Group FF_Overloop			"Overloop"			<corridor>		(gFF)
+
+//2de verdieping
+Group SF_Slaapkamer			"Slaapkamer"			<bedroom>		(gSF)
+Group SF_Inloop_kast			"Inloop kast"			<wardrobe>		(gSF)
+Group SF_Washok   			"Washok"			<washingmachine>	(gSF)
+Group SF_Overloop 			"Overloop"			<corridor>		(gSF)
+
+//Energie
+Group GF_Energie    			 "Begaande grond verbruik" 	<energy>		(gGF)
+Group FF_Energie     			 "1ste verdieping verbruik"	<energy>		(gGF)
+Group SF_Energie     			 "2de verdieping verbruik"	<energy>		(gGF)
+
+/* active groups */
+Group:Switch:OR(ON, OFF) Lights 	"Alle verlichting [(%d)]" 	<hue>			(All)
+Group:Switch:OR(ON, OFF) LightsGF	"Alle verlichting [(%d)]" 	<hue>			(All)
+Group:Switch:OR(ON, OFF) LightsFF	"Alle verlichting [(%d)]" 	<hue>			(All)
+Group:Switch:OR(ON, OFF) LightsSF	"Alle verlichting [(%d)]" 	<hue>			(All)

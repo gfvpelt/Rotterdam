@@ -1,0 +1,72 @@
+// Power sockets
+//Greenwave 
+Switch Stroomplug_1 			"Stroomplug"					(GF_Meterkast)			{zwave="3:command=switch_binary"} 
+Number Stroomplug_1W 			"Stroomplug verbruik [%.1f W]" 			(GF_Meterkast)			{zwave="3:command=meter,meter_scale=E_W,refresh_interval=80"}
+//Greenwave
+Switch Stroomplug_2 			"Stroomplug stoel"				(GF_Woonkamer)			{zwave="9:command=switch_binary"} 
+Number Stroomplug_2W		 	"Stroomplug stoel verbruik [%.1f W]" 		(GF_Woonkamer)			{zwave="9:command=meter,meter_scale=E_W,refresh_interval=80"}
+//AN158 powersocket 
+Switch Stroomplug_3 			"Stroomplug multimedia blok"			(GF_Woonkamer)			{zwave="7:command=switch_binary"} 
+Number Stroomplug_3W			"Stroomplug multimedia blok verbruik [%.1f W]" 	(GF_Woonkamer)			{zwave="7:command=meter,meter_scale=E_W,refresh_interval=80"}
+
+/* A six node power bar with integrated energy and power meter and different intervals. */
+Switch Switch_Powerbar1_Televisie 	"Televisie" 					(GF_Woonkamer) 			{zwave="8:1:command=switch_binary"} 
+Switch Switch_Powerbar1_WIIU	 	"Wii U"						(GF_Woonkamer) 			{zwave="8:2:command=switch_binary"} 
+Switch Switch_Powerbar1_HTPC		"HTPC" 						(GF_Woonkamer) 			{zwave="8:3:command=switch_binary"} 
+Switch Switch_Powerbar1_Versterker 	"Versterker" 					(GF_Woonkamer) 			{zwave="8:4:command=switch_binary"} 
+Switch Switch_Powerbar1_Chromecast 	"Chromecast" 					(GF_Woonkamer) 			{zwave="8:5:command=switch_binary"} 
+Switch Switch_Powerbar1_TV_Ontvanger 	"Cisco TV ontvanger" 				(GF_Woonkamer) 			{zwave="8:6:command=switch_binary"} 
+
+Number Power_Powerbar1_Televisie 	"Televisie stroom verbruik: [%.1f W]" 		(GF_Woonkamer) 			{zwave="8:1:command=meter,meter_scale=E_W,refresh_interval=60"} 
+Number Power_Powerbar1_WIIU 		"Wii U stroom verbruik: [%.1f W]" 		(GF_Woonkamer)	 		{zwave="8:2:command=meter,meter_scale=E_W,refresh_interval=70"} 
+Number Power_Powerbar1_HTPC		"HTPC stroom verbruik: [%.1f W]" 		(GF_Woonkamer)		 	{zwave="8:3:command=meter,meter_scale=E_W,refresh_interval=60"} 
+Number Power_Powerbar1_Versterker 	"Versterker stroom verbruik: [%.1f W]" 		(GF_Woonkamer) 			{zwave="8:4:command=meter,meter_scale=E_W,refresh_interval=70"} 
+Number Power_Powerbar1_Chromecast 	"Chromecast stroom verbruik: [%.1f W]" 		(GF_Woonkamer)	 		{zwave="8:5:command=meter,meter_scale=E_W,refresh_interval=80"} 
+Number Power_Powerbar1_TV_Ontvanger 	"Cisco TV ontvanger stroom verbruik: [%.1f W]" 	(GF_Woonkamer)	 		{zwave="8:6:command=meter,meter_scale=E_W,refresh_interval=80"} 
+
+Number Energy_Powerbar1_Televisie 	"Televisie totaal verbruik: [%.4f KWh]" 	(GF_Woonkamer)			{zwave="8:1:command=meter,meter_scale=E_KWh,refresh_interval=300"} 
+Number Energy_Powerbar1_WIIU 		"Wii U totaal verbruik: [%.4f KWh]" 		(GF_Woonkamer) 			{zwave="8:2:command=meter,meter_scale=E_KWh,refresh_interval=310"} 
+Number Energy_Powerbar1_HTPC		"HTPC totaal verbruik: [%.4f KWh]" 		(GF_Woonkamer) 			{zwave="8:3:command=meter,meter_scale=E_KWh,refresh_interval=320"} 
+Number Energy_Powerbar1_Versterker	"Versterker totaal verbruik: [%.4f KWh]"	(GF_Woonkamer) 			{zwave="8:4:command=meter,meter_scale=E_KWh,refresh_interval=330"} 
+Number Energy_Powerbar1_Chromecast 	"Chromecast totaal verbruik: [%.4f KWh]" 	(GF_Woonkamer) 			{zwave="8:5:command=meter,meter_scale=E_KWh,refresh_interval=340"} 
+Number Energy_Powerbar1_TV_Ontvanger	"Cisco TV ontvanger totaal verbruik:[%.4f KWh]"	(GF_Woonkamer) 			{zwave="8:6:command=meter,meter_scale=E_KWh,refresh_interval=350"} 
+
+// Scene controller
+// Dimmers
+
+// Wall switch LB = Links boven, RB = Rechtsboven, LO linksonder, RO Rechtsonder
+// EK = enkele klik, DK = dubbele klik LS = Lange druk start, LE = lange druk eind
+
+// Linksboven			// Linksonder
+// 11 = LB enkele klik		// 12 = LO enkele klik
+// 31 = LB dubbele klik 	// 32 = LO dubbele klik
+// 13 = LB Lange indruk start 	// 14 = LO Lange indruk start
+// 15 = LB Lange indruk eind 	// 16 = LO Lange indruk eind 
+
+// Rechtsboven 			// Rechtsonder
+// 21 = RB enkele klik 		// 22 = RO enkele klik
+// 41 = RB dubbele klik 	// 42 = RO dubbele klik
+// 23 = RB Lange indruk start 	// 24 = RO Lange indruk start
+// 25 = RB Lange indruk eind 	// 26 = RO Lange indruk eind 
+
+//Wall_Switch1
+Switch	Wall_Switch1_LB_EK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=11,state=0"}
+Switch	Wall_Switch1_LO_EK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=12,state=0"}
+Switch	Wall_Switch1_RB_EK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=21,state=0"}
+Switch	Wall_Switch1_RO_EK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=22,state=0"}
+
+Switch	Wall_Switch1_LB_DK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=31,state=0"}
+Switch	Wall_Switch1_LO_DK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=32,state=0"}
+Switch	Wall_Switch1_RB_DK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=41,state=0"}
+Switch	Wall_Switch1_RO_DK			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=42,state=0"}
+
+Switch	Wall_Switch1_LB_LS			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=13,state=0"}
+Switch	Wall_Switch1_LB_LE			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=15,state=0"}
+Switch	Wall_Switch1_LO_LS			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=14,state=0"}
+Switch	Wall_Switch1_LO_LE			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=16,state=0"}
+Switch	Wall_Switch1_RB_LS			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=23,state=0"}
+Switch	Wall_Switch1_RO_LE			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=24,state=0"}
+Switch	Wall_Switch1_RO_LS			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=26,state=0"}
+Switch	Wall_Switch1_RB_LE			""						<switch>			{zwave="10:command=SCENE_ACTIVATION,scene=25,state=0"}
+
+Number	Wall_Switch1_Batterij 			"Batterij"					<energy>			{zwave="10:0:command=BATTERY"}

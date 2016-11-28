@@ -1,0 +1,209 @@
+import org.openhab.core.library.types.*
+import org.openhab.core.persistence.*
+import org.openhab.model.script.actions.*
+
+rule "Naar bed"
+when
+	Item Scene_naar_bed received command
+then
+	if(receivedCommand==1) {
+
+                // Powerblok6
+		sendCommand(Switch_Powerbar1_Televisie,OFF)
+		sendCommand(Switch_Powerbar1_Versterker,OFF)
+		sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+		sendCommand(Switch_Powerbar1_WIIU,OFF)
+		sendCommand(Switch_Powerbar1_HTPC,OFF)
+		sendCommand(Switch_Powerbar1_Chromecast,OFF)
+
+		// Verlichting aan
+		sendCommand(Toggle_1,ON)
+		sendCommand(Toggle_5,ON)
+		sendCommand(Toggle_6,ON)
+		sendCommand(Toggle_9,ON)
+
+		// Verlichting uit
+		sendCommand(Toggle_4,OFF)
+		sendCommand(Toggle_7,OFF)
+		sendCommand(Toggle_8,OFF)
+		sendCommand(Toggle_10,OFF)
+		sendCommand(Toggle_11,OFF)
+		sendCommand(Toggle_12,OFF)
+		sendCommand(Toggle_13,OFF)
+		sendCommand(Toggle_14,OFF)
+		sendCommand(Toggle_15,OFF)
+
+		// Dimmen
+                sendCommand(Dimm_2,50)
+                sendCommand(Dimm_3,50)
+                sendCommand(Dimm_5,50)
+                sendCommand(Dimm_6,50)
+                sendCommand(Dimm_9,50)
+
+
+		// Verlichting uit na 300 seconden
+		Thread::sleep(300000)
+		sendCommand(Toggle_2,OFF)
+		sendCommand(Toggle_3,OFF)
+		sendCommand(Toggle_5,OFF)
+		sendCommand(Toggle_6,OFF)
+		sendCommand(Toggle_9,OFF)
+
+		// Dim de slaapkamer om te laten zien dat het klaar is
+                sendCommand(Dimm_1,70)
+	}
+end
+
+rule "Huis uit"
+when
+	Item Scene_huis_uit received command
+then
+	if(receivedCommand==1) {
+
+		// Powerblok6
+		sendCommand(Switch_Powerbar1_Televisie,OFF)
+		sendCommand(Switch_Powerbar1_Versterker,OFF)
+		sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+		sendCommand(Switch_Powerbar1_WIIU,OFF)
+		sendCommand(Switch_Powerbar1_HTPC,OFF)
+		sendCommand(Switch_Powerbar1_Chromecast,OFF)
+
+		// Verlichting
+		sendCommand(Lights,OFF)
+	}
+end
+
+
+rule "TV kijken"
+when
+        Item Scene_TV_kijken received command
+then
+        if(receivedCommand==1) {
+		sendCommand(Switch_Powerbar1_Televisie,ON)
+		sendCommand(Switch_Powerbar1_Versterker,ON)
+		sendCommand(Switch_Powerbar1_TV_Ontvanger,ON)
+		sendCommand(Switch_Powerbar1_WIIU,OFF)
+		sendCommand(Switch_Powerbar1_HTPC,OFF)
+		sendCommand(Switch_Powerbar1_Chromecast,OFF)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,1)
+       		Thread::sleep(65000)
+               	sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,1)
+	}
+end
+
+rule "Multimedia streamen"
+when
+        Item Scene_Multimedia_streamen received command
+then
+        if(receivedCommand==1) {
+                sendCommand(Switch_Powerbar1_Televisie,ON)
+                sendCommand(Switch_Powerbar1_Versterker,ON)
+                sendCommand(Switch_Powerbar1_HTPC,ON)
+                sendCommand(Switch_Powerbar1_Chromecast,OFF)
+                sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+                sendCommand(Switch_Powerbar1_WIIU,OFF)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,16)
+       		Thread::sleep(65000)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,16)
+        }
+end
+
+rule "WIIU gamen"
+when
+        Item Scene_WiiU_gamen received command
+then
+        if(receivedCommand==1) {
+                sendCommand(Switch_Powerbar1_Televisie,ON)
+                sendCommand(Switch_Powerbar1_Versterker,ON)
+                sendCommand(Switch_Powerbar1_WIIU,ON)
+                sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+                sendCommand(Switch_Powerbar1_HTPC,OFF)
+                sendCommand(Switch_Powerbar1_Chromecast,OFF)
+               	sendCommand(onkyoVolume,39)
+               	sendCommand(onkyoSource,5)
+       		Thread::sleep(65000)
+               	sendCommand(onkyoVolume,39)
+               	sendCommand(onkyoSource,5)
+			
+        }
+end
+
+rule "WIIU gamen + Chromecast"
+when
+        Item Scene_WiiU_plus_Chromecast received command
+then
+        if(receivedCommand==1) {
+                sendCommand(Switch_Powerbar1_Televisie,ON)
+                sendCommand(Switch_Powerbar1_Versterker,ON)
+                sendCommand(Switch_Powerbar1_WIIU,ON)
+                sendCommand(Switch_Powerbar1_Chromecast,ON)
+                sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+                sendCommand(Switch_Powerbar1_HTPC,OFF)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,35)
+       		Thread::sleep(65000)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,35)
+        }
+end
+
+rule "WIIU gamen + TV kijken"
+when
+        Item Scene_WiiU_plus_TV_kijken received command
+then
+        if(receivedCommand==1) {
+                sendCommand(Switch_Powerbar1_Televisie,ON)
+                sendCommand(Switch_Powerbar1_Versterker,ON)
+                sendCommand(Switch_Powerbar1_WIIU,ON)
+                sendCommand(Switch_Powerbar1_TV_Ontvanger,ON)
+                sendCommand(Switch_Powerbar1_Chromecast,OFF)
+                sendCommand(Switch_Powerbar1_HTPC,OFF)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,1)
+       		Thread::sleep(65000)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,1)
+        }
+end
+
+rule "Chromecast"
+when
+        Item Scene_Chromecast received command
+then
+        if(receivedCommand==1) {
+                sendCommand(Switch_Powerbar1_Televisie,ON)
+                sendCommand(Switch_Powerbar1_Versterker,ON)
+                sendCommand(Switch_Powerbar1_Chromecast,ON)
+                sendCommand(Switch_Powerbar1_WIIU,OFF)
+                sendCommand(Switch_Powerbar1_TV_Ontvanger,OFF)
+                sendCommand(Switch_Powerbar1_HTPC,OFF)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,35)
+       		Thread::sleep(65000)
+                sendCommand(onkyoVolume,39)
+                sendCommand(onkyoSource,35)
+        }
+end
+
+rule "Test rule"
+when
+	Item Scene_test received command
+then
+        if(receivedCommand==1) {
+
+        if(Wormen_aanwezig.state==ON) {
+                // verlichting kan aan Dag_proxy.state==OFF
+                // Ochtendschemering_proxy.sendCommand(OFF)
+                logDebug("TESTING", "Avondschemering start en Wormen_aanwezig staat op aan, lamp kan aan")
+
+        } else {
+                logDebug("TESTING", "Wormen doen het niet")
+                // Het is licht geen verlichting aan
+        }
+
+       	}
+end

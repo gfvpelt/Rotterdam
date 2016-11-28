@@ -1,0 +1,17 @@
+// Dates and Time items
+DateTime Zonsopkomst 			"Zonsopkomst [%1$tH:%1$tM]" 		<sun>		{astro="planet=sun, type=rise, property=start"}
+DateTime Zonsondergang	 		"Zonsondergang [%1$tH:%1$tM]" 		<moon>		{astro="planet=sun, type=set, property=start"}
+DateTime Date				"Date [%1$tA, %1$td.%1$tm.%1$tY]"	<calendar>	{ntp="Europe/Amsterdam:nl_NL"}
+
+//Dates and Time switches
+Switch  Zon_volledig_opgekomen_switch 								{astro="planet=sun, type=rise, property=start, offset=60"}
+Switch	Ochtendschemering_event		"Ochtendschemering"					{astro="planet=sun, type=rise, property=start, offset=-30"}
+Switch	Zonopkomst_event 		"Zonsopkomst"						{astro="planet=sun, type=rise, property=start"}
+Switch	Avondschemering_event		"Avondschemering"					{astro="planet=sun, type=set, property=start, offset=-15"}
+Switch	Zonsondergang_event		"Zonsondergang"						{astro="planet=sun, type=set, property=start"}
+
+//Proxy items to know when it's day/night etc.
+Switch	Ochtendschemering_proxy		"Ochtendschemering"		(Tijd_proxy)
+Switch	Dag_proxy			"Dag"				(Tijd_proxy)
+Switch	Avondschemering_proxy		"Avondschemering"		(Tijd_proxy)
+Switch	Nacht_proxy			"Nacht"				(Tijd_proxy)

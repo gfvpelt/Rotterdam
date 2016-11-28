@@ -1,0 +1,15 @@
+// Scenes
+Number Scene_General                    "Scene"        		 	<sofa>
+
+// Algemeen
+Number Scene_huis_uit     		"Huis uit!" 			<house-off>
+Number Scene_naar_bed     		"Naar bed!" 			<bedroom>
+
+// Multimedia
+Number Scene_TV_kijken	 		"TV kijken"			<television>
+Number Scene_Multimedia_streamen	"Multimedia streamen"		<video>
+Number Scene_WiiU_gamen 		"Wii U gamen"			<sofa>
+Number Scene_WiiU_plus_Chromecast 	"Wii U + Chromecast"		<sofa>
+Number Scene_WiiU_plus_TV_kijken 	"Wii U + TV kijken"		<sofa>
+Number Scene_Chromecast 		"Chromecast"			<video>
+Number Scene_test			"test"				<sofa>

@@ -1,0 +1,277 @@
+sitemap demo label="House"
+{
+	Frame label="Verlichting" {
+					Text		item=Sunrise_Time label="Sunrise [%1$tH:%1$tM]"
+		Group label="Begaande grond" icon="groundfloor"  {
+			Group label="Woonkamer" icon="video" {
+				Frame label="Verlichting" {
+					Switch		item=Toggle_2                                
+					Switch		item=Toggle_3
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_2    visibility=[Toggle_2==ON]   
+					Slider         item=Dimm_2     visibility=[Toggle_2==ON]  
+					Slider         item=CT_Dimm_2  visibility=[Toggle_2==ON] 
+					Colorpicker    item=Color_3    visibility=[Toggle_3==ON]   
+					Slider         item=Dimm_3     visibility=[Toggle_3==ON]  
+					Slider         item=CT_Dimm_3  visibility=[Toggle_3==ON] 
+				}
+				Frame label="Stroom" {
+					Switch		item=Switch_Powerbar1_Televisie icon="socket"
+					Text		item=Power_Powerbar1_Televisie visibility=[Switch_Powerbar1_Televisie==ON]
+					Switch		item=Switch_Powerbar1_WIIU icon="socket"
+					Text		item=Power_Powerbar1_WIIU visibility=[Switch_Powerbar1_WIIU==ON]
+					Switch		item=Switch_Powerbar1_HTPC icon="socket"
+					Text		item=Power_Powerbar1_HTPC visibility=[Switch_Powerbar1_HTPC==ON]
+					Switch		item=Switch_Powerbar1_Versterker icon="socket"
+					Text		item=Power_Powerbar1_Versterker visibility=[Switch_Powerbar1_Versterker==ON]
+					Switch		item=Switch_Powerbar1_Chromecast icon="socket"
+					Text		item=Power_Powerbar1_Chromecast visibility=[Switch_Powerbar1_Chromecast==ON]
+					Switch		item=Switch_Powerbar1_TV_Ontvanger icon="socket"
+					Text		item=Power_Powerbar1_TV_Ontvanger visibility=[Switch_Powerbar1_TV_Ontvanger==ON]
+					Switch		item=Stroomplug_3 icon="socket"
+					Text		item=Stroomplug_3W 
+				}
+    				Frame label="Multimedia" {
+        				Text label="Onkyo - versterker" icon="sofa" {
+            					Frame label="Power" {
+                					Switch    item=onkyoPower
+                					Selection item=onkyoSleep mappings=[0=Off, 5="5 Min", 10="10 Min", 15="15 Min", 30="30 Min", 77="77 Min", 90="90 Min"]
+            					}
+            					Frame label="Volume" {
+                					Switch item=onkyoMute
+                					Slider item=onkyoVolume
+  	          				}			
+        	    				Frame label="Source" {
+                					Selection item=onkyoSource mappings=[1="TV/CISCO", 2="XBOX", 5="WiiU", 16="HTPC", 35="Chromecast", 6="NET/USB"]
+            					}
+            					Frame label="Video Modes" {
+                					Selection item=onkyoVideoWide label="Video Wide" mappings=[0=Auto, 1="4:3", 2=Full, 3=Zoom, 4="Wide Zoom", 5="Smart Zoom"]
+                					Selection item=onkyoVideoPicture label="Video Picture" mappings=[0=Trough, 1=Custom, 2=Cinema, 3=Game, 5="ISF Day", 6="ISF Night", 7="Streaming", 8=Direct]
+            					}
+            					Frame label="Audio Modes" {
+                					Selection item=onkyoListenMode mappings=[0=Stereo, 1=Direct, 2=Surround, 15=Mono, 31="Whole House Mode", 66="THX Cinema", 31="Whole House"]
+                					Switch    item=onkyoAudysseyDynEQ
+                					Selection item=onkyoAudysseyDynVol mappings=[0=OFF, 1=Low, 2=Mid, 3=High]
+            					}
+	            				Frame label="Information" {
+        	        				Text item=onkyoAudio
+               		 				Text item=onkyoVideo
+            					}
+            					Frame label="Display" {
+                					Selection item=onkyoDisplayMode mappings=[0="Source + Vol", 2="Digital Format (temporary)", 3="Video Format (temporary)"]
+                					Selection item=onkyoDimmerLevel mappings=[0="Bright", 1="Dim", 2="Dark", 3="Shut-Off", 8="Bright & LED OFF"]
+            					}	
+        				}		
+    				}		
+			}
+			Group label="Keuken" icon="kitchen" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_10                                
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_10    visibility=[Toggle_10==ON]   
+					Slider         item=Dimm_10     visibility=[Toggle_10==ON]  
+					Slider         item=CT_Dimm_10  visibility=[Toggle_10==ON] 
+				}
+			}
+			Group label="Toilet" icon="bath" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_7                               
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_10    visibility=[Toggle_10==ON]   
+					Slider         item=Dimm_10     visibility=[Toggle_10==ON]  
+					Slider         item=CT_Dimm_10  visibility=[Toggle_10==ON] 
+				}
+			}
+			Group label="Meterkast" icon="energy" {
+				Frame label="Stroom" {
+					Switch		item=Stroomplug_1
+					Text 		item=Stroomplug_1W visibility=[Stroomplug_1==ON]
+       		                 }
+			}
+			Group label="Overloop" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_6                               
+       		                 }
+				Frame label="Extra controle" {
+					Slider         item=Dimm_6     visibility=[Toggle_6==ON]  
+				}
+			}
+			Group label="Portaal" icon="corridor" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_11                               
+					Switch         item=Toggle_14                               
+       		                 }
+				Frame label="Extra controle" {
+					Slider         item=Dimm_11     visibility=[Toggle_11==ON]  
+					Slider         item=Dimm_14     visibility=[Toggle_14==ON]  
+				}
+			}
+	                Switch item=LightsGF mappings=[OFF="Uit",ON="Aan"]
+		}
+		Group label="1ste verdieping" icon="firstfloor"  {
+			Group label="Badkamer" icon="bath" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_8                               
+       		                 }
+				Frame label="Extra controle" {
+					Slider         item=Dimm_8     visibility=[Toggle_8==ON]  
+				}
+			}
+			Group label="Luuk" icon="boy0" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_12                                
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_12    visibility=[Toggle_12==ON]   
+					Slider         item=Dimm_12     visibility=[Toggle_12==ON]  
+					Slider         item=CT_Dimm_12  visibility=[Toggle_12==ON] 
+				}
+			}
+			Group label="Jim" icon="child1" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_13                                
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_13    visibility=[Toggle_13==ON]   
+					Slider         item=Dimm_13     visibility=[Toggle_13==ON]  
+					Slider         item=CT_Dimm_13  visibility=[Toggle_13==ON] 
+				}
+			}
+			Group label="Werkkamer" icon="office" {
+				Frame label="Verlichting" {
+					Switch         item=Toggle_4                                
+       		                 }
+				Frame label="Extra controle" {
+					Colorpicker    item=Color_4    visibility=[Toggle_4==ON]   
+					Slider         item=Dimm_4     visibility=[Toggle_4==ON]  
+					Slider         item=CT_Dimm_4  visibility=[Toggle_4==ON] 
+				}
+			}
+                        Group label="Overloop" icon="corridor" {
+                                Frame label="Verlichting" {
+					Switch         item=Toggle_5
+                                }
+                                Frame label="Extra controle" {
+					Slider         item=Dimm_5     visibility=[Toggle_5==ON]  
+				}
+                        }
+	                Switch item=LightsFF mappings=[OFF="Uit",ON="Aan"]
+		}
+
+                Group label="2de verdieping" icon="attic" {
+                        Group label="Slaapkamer" icon="bedroom" {
+                                Frame label="Verlichting" {
+					Switch		item=Toggle_1                                
+                                }
+                                Frame label="Extra controle" {
+					Colorpicker    item=Color_1    visibility=[Toggle_1==ON]   
+					Slider         item=Dimm_1     visibility=[Toggle_1==ON]  
+					Slider         item=CT_Dimm_1  visibility=[Toggle_1==ON] 
+				}
+                        }
+                        Group label="Inloop kast" icon="wardrobe" {
+                                Frame label="Verlichting" {
+					Switch         item=Toggle_15
+                                }
+                                Frame label="Extra controle" {
+					Slider         item=Dimm_15     visibility=[Toggle_15==ON]  
+				}
+                        }
+                        Group label="Washok" icon="washingmachine" {
+                                Frame label="Verlichting" {
+                                        Text label="TBD" icon="house-off"
+                                }
+                                Frame label="Extra controle" {
+                                        Text label="TBD" icon="house-off"
+				}
+                        }
+                        Group label="Overloop" icon="corridor" {
+                                Frame label="Verlichting" {
+					Switch         item=Toggle_9
+                                }
+                                Frame label="Extra controle" {
+					Slider         item=Dimm_9     visibility=[Toggle_9==ON]  
+				}
+                        }
+	                Switch item=LightsSF mappings=[OFF="ALL OFF",ON="ALL ON"]
+                }
+		Group label="Tuin" icon="garden" {
+                	Group label="Voortuin" icon="garden" {
+                        	Frame label="Verlichting" {
+					Text label="TBD" icon="house-off"
+                                }
+                       	}
+                	Group label="Achtertuin" icon="garden" {
+                        	Frame label="Verlichting" {
+					Text label="TBD" icon="house-off"
+                                }
+                       	}
+		}
+	}
+	Frame label="Date" {
+		Text item=Date
+	}
+	Frame label="Scenes" {
+		Text label="Favorieten" icon="house-off" {
+			Frame label="Algemeen" {
+				Switch item=Scene_huis_uit	label="Huis uit!" mappings=[1="Activeer!"]
+				Switch item=Scene_naar_bed	label="Naar bed!" mappings=[1="Activeer!"]
+			}
+			Frame label="Verlichting" {
+				Switch item=Lights mappings=[OFF="Uit",ON="Aan"]
+				Switch item=LightsGF mappings=[OFF="Uit",ON="Aan"]
+				Switch item=LightsFF mappings=[OFF="Uit",ON="Aan"]
+				Switch item=LightsSF mappings=[OFF="Uit",ON="Aan"]
+			}
+			Frame label="Multimedia" {
+				Switch item=Scene_TV_kijken				label="TV kijken" 			mappings=[1="Activeer!"]
+				Switch item=Scene_Chromecast				label="Chromecast" 			mappings=[1="Activeer!"]
+				Switch item=Scene_WiiU_gamen				label="WiiU gamen"			mappings=[1="Activeer!"]
+				Switch item=Scene_WiiU_plus_Chromecast			label="WiiU + Chromecast"	 	mappings=[1="Activeer!"]
+				Switch item=Scene_WiiU_plus_TV_kijken			label="WiiU + TV kijken" 		mappings=[1="Activeer!"]
+				Switch item=Scene_Multimedia_streamen			label="Multimedia streamen" 		mappings=[1="Activeer!"]
+			}
+		}
+		Text label="Automatische" icon="house-off" {
+			Frame label="Zon" {
+				Text label="Zons ondergang" icon="house-off"
+				Text label="Zons opkomst" icon="house-off"
+			}
+		}
+	}
+    Frame label="Multimedia" {
+        Text label="Onkyo - versterker" icon="sofa" {
+            Frame label="Power" {
+                Switch    item=onkyoPower
+                Selection item=onkyoSleep mappings=[0=Off, 5="5 Min", 10="10 Min", 15="15 Min", 30="30 Min", 77="77 Min", 90="90 Min"]
+            }
+            Frame label="Volume" {
+                Switch item=onkyoMute
+                Slider item=onkyoVolume
+            }
+            Frame label="Source" {
+                Selection item=onkyoSource mappings=[1="TV/CISCO", 2=XBOX, 5=WIIU, 16="HTPC", 35=Chromecast, 43="NET/USB"]
+            }
+            Frame label="Video Modes" {
+                Selection item=onkyoVideoWide label="Video Wide" mappings=[0=Auto, 1="4:3", 2=Full, 3=Zoom, 4="Wide Zoom", 5="Smart Zoom"]
+                Selection item=onkyoVideoPicture label="Video Picture" mappings=[0=Trough, 1=Custom, 2=Cinema, 3=Game, 5="ISF Day", 6="ISF Night", 7="Streaming", 8=Direct]
+            }
+            Frame label="Audio Modes" {
+                Selection item=onkyoListenMode mappings=[0=Stereo, 1=Direct, 2=Surround, 15=Mono, 31="Whole House Mode", 66="THX Cinema", 31="Whole House"]
+                Switch    item=onkyoAudysseyDynEQ
+                Selection item=onkyoAudysseyDynVol mappings=[0=OFF, 1=Low, 2=Mid, 3=High]
+            }
+            Frame label="Information" {
+                Text item=onkyoAudio
+                Text item=onkyoVideo
+            }
+            Frame label="Display" {
+                Selection item=onkyoDisplayMode mappings=[0="Source + Vol", 2="Digital Format (temporary)", 3="Video Format (temporary)"]
+                Selection item=onkyoDimmerLevel mappings=[0="Bright", 1="Dim", 2="Dark", 3="Shut-Off", 8="Bright & LED OFF"]
+            }
+        }
+    }
+}

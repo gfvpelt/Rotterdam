@@ -1,0 +1,11 @@
+rule "Initialiseren van bepaalde items"
+when
+    System started
+then
+    createTimer(now.plusSeconds(45)) [|
+        Tijd_proxy.members.filter( x | x.state == Uninitialized).forEach[ item |
+
+            postUpdate( item, "OFF")
+        ]
+    ]
+end
