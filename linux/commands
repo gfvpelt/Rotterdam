@@ -66,4 +66,5 @@ rechten van directory's enzo
 alias ll='ls -al'
 find -name zoekopdract 	2>/dev/null
 
+vi
 :%s/search_string/replacement_string/g
