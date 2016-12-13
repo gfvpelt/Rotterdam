@@ -19,6 +19,14 @@ git commit -am "bla"
 git push origin master "zorg wel dat je in Rotterdam directory staat"
 
 
+git branch test
+git checkout test
+
+git checkout master
+git add *
+git commit -m "test brange"
+git push origin master
+
 
 =========
 password staat in last pass
