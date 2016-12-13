@@ -64,7 +64,7 @@ rechten van directory's enzo
 	/usr/lib/tmpfiles.d
 
 alias ll='ls -al'
-find -name zoekopdract 	2>/dev/null
+find ./ -name zoekopdract 	2>/dev/null
 
 vi
 :%s/search_string/replacement_string/g
