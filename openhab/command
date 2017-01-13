@@ -17,3 +17,24 @@ Username/Password is openhab/habopen
 
 
 in de items geen - gebruiken... _ zijn beter ;-) jezzz
+
+
+
+
+Fresh install Openhab v1
+
+sudo apt-get update ; apt-get -y upgrade ; apt-get -y install unzip wget
+sudo	wget https://bintray.com/artifact/download/openhab/bin/distribution-1.8.2-runtime.zip  
+sudo	unzip distribution-1.8.2-runtime.zip -d /opt/openhab 
+sudo    rm distribution-1.8.2-runtime.zip 
+sudo    mkdir -p /opt/openhab/logs 
+sudo  	mkdir -p /opt/openhab-all-bindings 
+sudo    wget https://bintray.com/artifact/download/openhab/bin/distribution-1.8.2-addons.zip 
+sudo    unzip distribution-1.8.2-addons.zip -d /opt/openhab-all-bindings 
+sudo    rm distribution-1.8.2-addons.zip 
+sudo    mkdir -p /opt/openhab/webapps/habmin 
+sudo    wget https://github.com/cdjackson/HABmin/archive/master.zip 
+sudo    unzip master.zip 
+sudo    mv HABmin-master/* /opt/openhab/webapps/habmin 
+sudo    rm -r HABmin-master master.zip 
+sudo    mv $HABMIN_DIR/addons/*habmin*.jar /opt/openhab/addons
