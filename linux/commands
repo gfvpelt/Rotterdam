@@ -63,6 +63,9 @@ execute a script in -> /bin/execute/
 rechten van directory's enzo
 	/usr/lib/tmpfiles.d
 
+Stack
+https://gfvpelt.stackstorage.com/remote.php/webdav/ on /home/gfvpelt/stack type fuse (rw,nosuid,nodev,noexec,relatime,user_id=1000,group_id=1000,allow_other,max_read=16384)
+
 alias ll='ls -al'
 find ./ -name zoekopdract 	2>/dev/null
 

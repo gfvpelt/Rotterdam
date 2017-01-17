@@ -27,6 +27,10 @@ git add *
 git commit -m "test brange"
 git push origin master
 
+als branch goed is merge deze met de master en push de master naar git hub
+git checkout master
+git merge NL-v2 master
+git push origin master
 
 =========
 password staat in last pass
