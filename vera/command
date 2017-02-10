@@ -1,0 +1,10 @@
+
+Advanced tab, the Settings tab, or the Account tab. There will be an 'enable' button. Click that to turn on the tech support service. You will see a message like this:
+
+Tech support full control enabled, access code 3000000-436969
+ser called "remote" password, 436969
+nvram show | grep pass
+
+root@MiOS_35103907:~# nvram show | grep pass
+vera_wifipass=young30rule
+
