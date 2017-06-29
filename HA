@@ -1,0 +1,2 @@
+su - homeassistant -s /bin/bash
+<ip>:8123
