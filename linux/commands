@@ -4,6 +4,11 @@ grep ika * | awk '{print$1" "$2}' | cut -d'-' -f1
 chgrp -R <file-or-dir>
 chown -R
 
+
+export http_proxy="http://proxy-eu.shell.com:8080/"
+export https_proxy="http://proxy-eu.shell.com:8080/"
+
+
 lxc stop $(lxc list | grep RUNNING | awk '{print $2}' | sort -u|grep -v NAME)
  ps -fauxww
 
