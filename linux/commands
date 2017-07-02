@@ -8,6 +8,8 @@ chown -R
 export http_proxy="http://proxy-eu.shell.com:8080/"
 export https_proxy="http://proxy-eu.shell.com:8080/"
 
+sudo timedatectl set-timezone Europe/Amsterdam
+
 
 lxc stop $(lxc list | grep RUNNING | awk '{print $2}' | sort -u|grep -v NAME)
  ps -fauxww
