@@ -1,2 +1,11 @@
-su - homeassistant -s /bin/bash
 <ip>:8123
+
+update
+sudo su -s /bin/bash homeassistant
+source /srv/homeassistant/bin/activate
+pip3 install --upgrade homeassistant
+
+
+logging zwave:
+tail -f OZW_Log.txt
+
