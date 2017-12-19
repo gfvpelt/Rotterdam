@@ -1,0 +1,9 @@
+# welke staan open?
+tmux ls
+# attached to one
+tmux a -t GF
+# create new one
+tmux new -s <naam>
+# detach out of one
+Ctrl a d ofzo
+
