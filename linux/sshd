@@ -2,12 +2,10 @@ generate key pair
 ssh-keygen -t rsa
 -b 4048 ofzo als 2k key te klein is
 
-
 copy you id_rsa.pub into the authorized_keys file van de overkant 
  en dat zou genoeg moeten zijn. tiss wel wat gekut met format.
 
 ubuntu heeft wat ssh-copy-key stuffy ofzo... maar is miss juist onduidelijk
-
 
 gfvpelt@rdam:~$ cat /etc/ssh/sshd_config  | grep -v ^# | grep -v ^$
 Port 22
@@ -21,12 +19,6 @@ X11Forwarding yes
 PrintMotd no
 AcceptEnv LANG LC_*
 Subsystem       sftp    /usr/lib/openssh/sftp-server
-gfvpelt@rdam:~$
-
-
 
 gfvpelt@rdam:~$ cat .ssh/authorized_keys
 ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAiG1/rDpjB+rc248/WGWXVHGQfTNq9OkFFjyH8xnrQyEuTTo3vwyOA3zy2EUo/2UAE2lDgXpEsIheJGbLNEX2a8BQ8Hk07Yl4rFMTwllGdo0ymerDWmLD0AqC5qsgUYOMbAG2RzRbt3T+8w3VgVisEHcrmo/32ueLvIz7tGMFbVmpqK8QvuhxoYzpDhmi/gcw2IJmu1+imEkrH8Pwpf+myUXum6PjZC091MCKsq5POh9gksz4SIsvTI8h7xKkruM7jzF6xG/0/naX/B/70k4if991mvzjpRVdBqmYpCAll/RndcS13lSIpV/20D9GQenYF6W6Sxn3cLQ4eIRZWhVEzX+zpG7sGMDqPnn95RALeLbg7vMuv9+dJZELeHvM0B/zmpwrLu2mi8jSe23DOPstijnb8T926slYFZnPCAhzcm5hzrEcemAMQpKWqqto1LC3gfjeT6oVwyZK5D5lfsyFKX9ly8PpEwr8cIOT8a4oi28fdy1MPEwEChnw2OQVUgcSIdLwxQP6g5zkNOXTdxuaWKP+0Q9SxMbp8ntDhzvAt14Z73sm62RpxMR16BwkOoPaxihMquLteQoJzgGLfMxpG8UwTic1acIcSAqQ52yL/0DqnWBmQttdBAk0UrCPlMP6rPuhQqTwdyG8h5UF9ueWbs9UM148aXjGHkik99mNO1E=   ---- END SSH2 PUBLIC KEY ----
-gfvpelt@rdam:~$
-
-
